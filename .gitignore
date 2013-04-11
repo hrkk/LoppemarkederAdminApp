@@ -1,0 +1,14 @@
+
+.DS_Store
+
+target/LoppemarkederAdminApp.war
+
+target/classes/ApplicationResources$_run_closure1.class
+
+*.class
+
+target/classes/application.properties
+
+target/classes/gsp/views.properties
+
+*.data
