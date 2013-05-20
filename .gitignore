@@ -12,3 +12,7 @@ target/classes/application.properties
 target/classes/gsp/views.properties
 
 *.data
+
+*.log
+
+.idea/ant.xml

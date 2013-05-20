@@ -4,6 +4,9 @@ import grails.converters.JSON
 import grails.plugins.springsecurity.Secured
 import org.springframework.dao.DataIntegrityViolationException
 
+
+import java.text.SimpleDateFormat
+
 class MarkedItemController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -21,6 +24,31 @@ class MarkedItemController {
 
     def listJSON() {
         def obj = [markedItemInstanceList: MarkedItem.list(), markedItemInstanceTotal: MarkedItem.count()]
+        render obj as JSON
+    }
+
+    def listJSONiPhone() {
+        def list = MarkedItem.list()
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd")
+        def listRes = []
+        list.each { it ->
+            MarkItemGroovy markItemGroovy = new MarkItemGroovy();
+            markItemGroovy.setId(it.getId())
+            markItemGroovy.setName(it.getName())
+            markItemGroovy.setAddress(it.getAddress())
+            markItemGroovy.setFromDate(it.getFromDate())
+            markItemGroovy.setToDate(it.getToDate())
+            markItemGroovy.setDateExtraInfo(it.getDateExtraInfo())
+            markItemGroovy.setEntreInfo(it.getEntreInfo())
+            markItemGroovy.setMarkedRules(it.getMarkedRules())
+            markItemGroovy.setMarkedInformation(it.getMarkedInformation())
+            markItemGroovy.setLatitude(it.getLatitude())
+            markItemGroovy.setLongitude(it.getLongitude())
+            markItemGroovy.setStringFromDate(sdf.format(it.getFromDate()))
+            if (it.getToDate()) markItemGroovy.setStringToDate(sdf.format(it.getToDate()))
+            listRes << markItemGroovy
+        }
+        def obj = [markedItemInstanceList: listRes, markedItemInstanceTotal: MarkedItem.count()]
         render obj as JSON
     }
 
