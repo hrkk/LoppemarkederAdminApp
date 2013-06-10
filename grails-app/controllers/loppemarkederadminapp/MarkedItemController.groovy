@@ -9,6 +9,13 @@ import java.text.SimpleDateFormat
 
 class MarkedItemController {
 
+    def beforeInterceptor = [action: this.&auth, except: ['index', 'create','save', 'show', 'edit', 'delete', 'list']]
+
+    private auth() {
+        def userAgent = request.getHeader('User-Agent')
+        new UserAgentTrail(userAgent: "${userAgent}").save(flush: true)
+    }
+
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     @Secured(['ROLE_ADMIN'])
@@ -27,28 +34,36 @@ class MarkedItemController {
         render obj as JSON
     }
 
-    def listJSONiPhone() {
+    def listJSON2() {
         def list = MarkedItem.list()
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd")
-        def listRes = []
+
+        // remove timeout markets
+        def listActive = []
+        // check date
+        Calendar now = Calendar.getInstance();
+        now.set(Calendar.MILLISECOND, 0)
+        now.set(now.get(Calendar.YEAR), now.get(Calendar.MONTH), now.get(Calendar.DATE), 0, 0, 0);
+
+        // if (item.fromDate.after(cal.getTime())) {
+        Date nowAsDate = now.getTime();
+
         list.each { it ->
-            MarkItemGroovy markItemGroovy = new MarkItemGroovy();
-            markItemGroovy.setId(it.getId())
-            markItemGroovy.setName(it.getName())
-            markItemGroovy.setAddress(it.getAddress())
-            markItemGroovy.setFromDate(it.getFromDate())
-            markItemGroovy.setToDate(it.getToDate())
-            markItemGroovy.setDateExtraInfo(it.getDateExtraInfo())
-            markItemGroovy.setEntreInfo(it.getEntreInfo())
-            markItemGroovy.setMarkedRules(it.getMarkedRules())
-            markItemGroovy.setMarkedInformation(it.getMarkedInformation())
-            markItemGroovy.setLatitude(it.getLatitude())
-            markItemGroovy.setLongitude(it.getLongitude())
-            markItemGroovy.setStringFromDate(sdf.format(it.getFromDate()))
-            if (it.getToDate()) markItemGroovy.setStringToDate(sdf.format(it.getToDate()))
-            listRes << markItemGroovy
+            // first the toDate is checked
+            if (it.toDate != null) {
+                Date toDateAsDate = it.toDate.toCalendar().getTime();
+                // is toDate in the future or current date
+                if (toDateAsDate.after(nowAsDate) || toDateAsDate.equals(nowAsDate) ) {
+                    listActive << it
+                }
+            } else {
+                Date fromDateAsDate = it.fromDate.toCalendar().getTime();
+                // id fromDate in the future or current date
+                if (fromDateAsDate.after(nowAsDate) || fromDateAsDate.equals(nowAsDate)) {
+                    listActive << it
+                }
+            }
         }
-        def obj = [markedItemInstanceList: listRes, markedItemInstanceTotal: MarkedItem.count()]
+        def obj = [markedItemInstanceList: listActive, markedItemInstanceTotal: listActive.size()]
         render obj as JSON
     }
 
