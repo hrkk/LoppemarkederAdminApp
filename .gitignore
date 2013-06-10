@@ -16,3 +16,7 @@ target/classes/gsp/views.properties
 *.log
 
 .idea/ant.xml
+
+target/stacktrace.log
+
+target/stacktrace.log
