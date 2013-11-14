@@ -34,23 +34,33 @@ class MarkedItemController {
         render obj as JSON
     }
 
+
+    private Date getDateWithoutTime(Calendar calendarIn) {
+        Calendar toDateAsCalendar = Calendar.getInstance();
+        toDateAsCalendar.set(Calendar.MILLISECOND, 0)
+        toDateAsCalendar.set(calendarIn.get(Calendar.YEAR), calendarIn.get(Calendar.MONTH), calendarIn.get(Calendar.DATE), 0, 0, 0);
+        return toDateAsCalendar.getTime();
+    }
+
     def listJSON2() {
         def list = MarkedItem.list()
 
         // remove timeout markets
         def listActive = []
-        // check date
-        Calendar now = Calendar.getInstance();
-        now.set(Calendar.MILLISECOND, 0)
-        now.set(now.get(Calendar.YEAR), now.get(Calendar.MONTH), now.get(Calendar.DATE), 0, 0, 0);
 
         // if (item.fromDate.after(cal.getTime())) {
-        Date nowAsDate = now.getTime();
+        Date nowAsDate = getDateWithoutTime(Calendar.getInstance());
+        println "nowAsDate " + nowAsDate
 
         list.each { it ->
+            // fix the dates
+            it.setFromDate(getDateWithoutTime(it.fromDate.toCalendar()))
+
             // first the toDate is checked
             if (it.toDate != null) {
+                it.setToDate(getDateWithoutTime(it.toDate.toCalendar()))
                 Date toDateAsDate = it.toDate.toCalendar().getTime();
+                println toDateAsDate
                 // is toDate in the future or current date
                 if (toDateAsDate.after(nowAsDate) || toDateAsDate.equals(nowAsDate) ) {
                     listActive << it
@@ -120,8 +130,8 @@ class MarkedItemController {
         if (version != null) {
             if (markedItemInstance.version > version) {
                 markedItemInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
-                          [message(code: 'markedItem.label', default: 'MarkedItem')] as Object[],
-                          "Another user has updated this MarkedItem while you were editing")
+                        [message(code: 'markedItem.label', default: 'MarkedItem')] as Object[],
+                        "Another user has updated this MarkedItem while you were editing")
                 render(view: "edit", model: [markedItemInstance: markedItemInstance])
                 return
             }
