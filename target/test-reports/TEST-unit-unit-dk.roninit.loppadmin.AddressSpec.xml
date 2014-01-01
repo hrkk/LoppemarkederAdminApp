@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="kasper-one-Pc" name="dk.roninit.loppadmin.AddressSpec" tests="1" time="0.807" timestamp="2013-12-14T22:10:50">
+  <properties />
+  <testcase classname="dk.roninit.loppadmin.AddressSpec" name="test something" time="0.207" />
+  <system-out><![CDATA[--Output from test something--
+]]></system-out>
+  <system-err><![CDATA[--Output from test something--
+]]></system-err>
+</testsuite>

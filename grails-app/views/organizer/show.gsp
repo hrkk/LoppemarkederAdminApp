@@ -23,6 +23,24 @@
 			</g:if>
 			<ol class="property-list organizer">
 			
+				<g:if test="${organizerInstance?.createdBy}">
+				<li class="fieldcontain">
+					<span id="createdBy-label" class="property-label"><g:message code="organizer.createdBy.label" default="Created By" /></span>
+					
+						<span class="property-value" aria-labelledby="createdBy-label"><g:fieldValue bean="${organizerInstance}" field="createdBy"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${organizerInstance?.modifiedBy}">
+				<li class="fieldcontain">
+					<span id="modifiedBy-label" class="property-label"><g:message code="organizer.modifiedBy.label" default="Modified By" /></span>
+					
+						<span class="property-value" aria-labelledby="modifiedBy-label"><g:fieldValue bean="${organizerInstance}" field="modifiedBy"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${organizerInstance?.firstName}">
 				<li class="fieldcontain">
 					<span id="firstName-label" class="property-label"><g:message code="organizer.firstName.label" default="First Name" /></span>
@@ -59,22 +77,20 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${organizerInstance?.markedItem}">
-				<li class="fieldcontain">
-					<span id="markedItem-label" class="property-label"><g:message code="organizer.markedItem.label" default="Marked Item" /></span>
-					
-						<g:each in="${organizerInstance.markedItem}" var="m">
-						<span class="property-value" aria-labelledby="markedItem-label"><g:link controller="markedItem" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${organizerInstance?.dateCreated}">
 				<li class="fieldcontain">
 					<span id="dateCreated-label" class="property-label"><g:message code="organizer.dateCreated.label" default="Date Created" /></span>
 					
-						<span class="property-value" aria-labelledby="dateCreated-label"><g:fieldValue bean="${organizerInstance}" field="dateCreated"/></span>
+						<span class="property-value" aria-labelledby="dateCreated-label"><g:formatDate date="${organizerInstance?.dateCreated}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${organizerInstance?.enableBooking}">
+				<li class="fieldcontain">
+					<span id="enableBooking-label" class="property-label"><g:message code="organizer.enableBooking.label" default="Enable Booking" /></span>
+					
+						<span class="property-value" aria-labelledby="enableBooking-label"><g:formatBoolean boolean="${organizerInstance?.enableBooking}" /></span>
 					
 				</li>
 				</g:if>
@@ -83,7 +99,18 @@
 				<li class="fieldcontain">
 					<span id="lastUpdated-label" class="property-label"><g:message code="organizer.lastUpdated.label" default="Last Updated" /></span>
 					
-						<span class="property-value" aria-labelledby="lastUpdated-label"><g:fieldValue bean="${organizerInstance}" field="lastUpdated"/></span>
+						<span class="property-value" aria-labelledby="lastUpdated-label"><g:formatDate date="${organizerInstance?.lastUpdated}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${organizerInstance?.markedItem}">
+				<li class="fieldcontain">
+					<span id="markedItem-label" class="property-label"><g:message code="organizer.markedItem.label" default="Marked Item" /></span>
+					
+						<g:each in="${organizerInstance.markedItem}" var="m">
+						<span class="property-value" aria-labelledby="markedItem-label"><g:link controller="markedItem" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

@@ -23,6 +23,24 @@
 			</g:if>
 			<ol class="property-list country">
 			
+				<g:if test="${countryInstance?.createdBy}">
+				<li class="fieldcontain">
+					<span id="createdBy-label" class="property-label"><g:message code="country.createdBy.label" default="Created By" /></span>
+					
+						<span class="property-value" aria-labelledby="createdBy-label"><g:fieldValue bean="${countryInstance}" field="createdBy"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${countryInstance?.modifiedBy}">
+				<li class="fieldcontain">
+					<span id="modifiedBy-label" class="property-label"><g:message code="country.modifiedBy.label" default="Modified By" /></span>
+					
+						<span class="property-value" aria-labelledby="modifiedBy-label"><g:fieldValue bean="${countryInstance}" field="modifiedBy"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${countryInstance?.countryName}">
 				<li class="fieldcontain">
 					<span id="countryName-label" class="property-label"><g:message code="country.countryName.label" default="Country Name" /></span>

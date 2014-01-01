@@ -2,6 +2,22 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: markedItemInstance, field: 'createdBy', 'error')} ">
+	<label for="createdBy">
+		<g:message code="markedItem.createdBy.label" default="Created By" />
+		
+	</label>
+	<g:textField name="createdBy" value="${markedItemInstance?.createdBy}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: markedItemInstance, field: 'modifiedBy', 'error')} ">
+	<label for="modifiedBy">
+		<g:message code="markedItem.modifiedBy.label" default="Modified By" />
+		
+	</label>
+	<g:textField name="modifiedBy" value="${markedItemInstance?.modifiedBy}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: markedItemInstance, field: 'name', 'error')} required">
 	<label for="name">
 		<g:message code="markedItem.name.label" default="Name" />

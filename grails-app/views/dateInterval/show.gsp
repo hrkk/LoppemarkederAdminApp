@@ -23,6 +23,24 @@
 			</g:if>
 			<ol class="property-list dateInterval">
 			
+				<g:if test="${dateIntervalInstance?.createdBy}">
+				<li class="fieldcontain">
+					<span id="createdBy-label" class="property-label"><g:message code="dateInterval.createdBy.label" default="Created By" /></span>
+					
+						<span class="property-value" aria-labelledby="createdBy-label"><g:fieldValue bean="${dateIntervalInstance}" field="createdBy"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${dateIntervalInstance?.modifiedBy}">
+				<li class="fieldcontain">
+					<span id="modifiedBy-label" class="property-label"><g:message code="dateInterval.modifiedBy.label" default="Modified By" /></span>
+					
+						<span class="property-value" aria-labelledby="modifiedBy-label"><g:fieldValue bean="${dateIntervalInstance}" field="modifiedBy"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${dateIntervalInstance?.fromDate}">
 				<li class="fieldcontain">
 					<span id="fromDate-label" class="property-label"><g:message code="dateInterval.fromDate.label" default="From Date" /></span>
@@ -45,7 +63,7 @@
 				<li class="fieldcontain">
 					<span id="dateCreated-label" class="property-label"><g:message code="dateInterval.dateCreated.label" default="Date Created" /></span>
 					
-						<span class="property-value" aria-labelledby="dateCreated-label"><g:fieldValue bean="${dateIntervalInstance}" field="dateCreated"/></span>
+						<span class="property-value" aria-labelledby="dateCreated-label"><g:formatDate date="${dateIntervalInstance?.dateCreated}" /></span>
 					
 				</li>
 				</g:if>
@@ -54,7 +72,7 @@
 				<li class="fieldcontain">
 					<span id="lastUpdated-label" class="property-label"><g:message code="dateInterval.lastUpdated.label" default="Last Updated" /></span>
 					
-						<span class="property-value" aria-labelledby="lastUpdated-label"><g:fieldValue bean="${dateIntervalInstance}" field="lastUpdated"/></span>
+						<span class="property-value" aria-labelledby="lastUpdated-label"><g:formatDate date="${dateIntervalInstance?.lastUpdated}" /></span>
 					
 				</li>
 				</g:if>

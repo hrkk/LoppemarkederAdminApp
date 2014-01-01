@@ -23,6 +23,24 @@
 			</g:if>
 			<ol class="property-list address">
 			
+				<g:if test="${addressInstance?.createdBy}">
+				<li class="fieldcontain">
+					<span id="createdBy-label" class="property-label"><g:message code="address.createdBy.label" default="Created By" /></span>
+					
+						<span class="property-value" aria-labelledby="createdBy-label"><g:fieldValue bean="${addressInstance}" field="createdBy"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${addressInstance?.modifiedBy}">
+				<li class="fieldcontain">
+					<span id="modifiedBy-label" class="property-label"><g:message code="address.modifiedBy.label" default="Modified By" /></span>
+					
+						<span class="property-value" aria-labelledby="modifiedBy-label"><g:fieldValue bean="${addressInstance}" field="modifiedBy"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${addressInstance?.addressLine}">
 				<li class="fieldcontain">
 					<span id="addressLine-label" class="property-label"><g:message code="address.addressLine.label" default="Address Line" /></span>
@@ -68,22 +86,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${addressInstance?.markeditems}">
-				<li class="fieldcontain">
-					<span id="markeditems-label" class="property-label"><g:message code="address.markeditems.label" default="Markeditems" /></span>
-					
-						<g:each in="${addressInstance.markeditems}" var="m">
-						<span class="property-value" aria-labelledby="markeditems-label"><g:link controller="markedItem" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${addressInstance?.dateCreated}">
 				<li class="fieldcontain">
 					<span id="dateCreated-label" class="property-label"><g:message code="address.dateCreated.label" default="Date Created" /></span>
 					
-						<span class="property-value" aria-labelledby="dateCreated-label"><g:fieldValue bean="${addressInstance}" field="dateCreated"/></span>
+						<span class="property-value" aria-labelledby="dateCreated-label"><g:formatDate date="${addressInstance?.dateCreated}" /></span>
 					
 				</li>
 				</g:if>
@@ -92,7 +99,18 @@
 				<li class="fieldcontain">
 					<span id="lastUpdated-label" class="property-label"><g:message code="address.lastUpdated.label" default="Last Updated" /></span>
 					
-						<span class="property-value" aria-labelledby="lastUpdated-label"><g:fieldValue bean="${addressInstance}" field="lastUpdated"/></span>
+						<span class="property-value" aria-labelledby="lastUpdated-label"><g:formatDate date="${addressInstance?.lastUpdated}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${addressInstance?.markeditems}">
+				<li class="fieldcontain">
+					<span id="markeditems-label" class="property-label"><g:message code="address.markeditems.label" default="Markeditems" /></span>
+					
+						<g:each in="${addressInstance.markeditems}" var="m">
+						<span class="property-value" aria-labelledby="markeditems-label"><g:link controller="markedItem" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

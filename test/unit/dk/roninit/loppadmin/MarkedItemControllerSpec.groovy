@@ -12,7 +12,42 @@ class MarkedItemControllerSpec extends Specification {
     def populateValidParams(params) {
         assert params != null
         // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
+        Address adr  = new Address(addressLine1: "adr1",addressLine2: "adr1",addressLine3: "adr1", country: new Country(countryName: "Denmark", countryCode: "DK"), longitude: 1, latitude: 2)
+        Organizer organizer = new Organizer(name: "Name", email: "abc@mail.dk", phone: "12345678")
+
+        params["name"] = 'someValidName'
+        params["entreInfo"] = 'entreInfo'
+        params["markedRules"] = 'markedRules'
+        params["additionalOpenTimePeriod"] = 'additionalOpenTimePeriod'
+        params["markedInformation"] = 'markedInformation'
+
+        params['address'] = adr
+        params['organizer'] = organizer
+    }
+
+    void "Test domain"() {
+
+        when:"Domain is created"
+        populateValidParams(params)
+        def markedItem = new MarkedItem(params)
+        def di = new DateInterval(fromDate:  new Date(), toDate: new Date())
+        Set<DateInterval> dateIntervalSet = new HashSet<DateInterval>()
+        dateIntervalSet.add(di)
+        markedItem.setDateInterval(dateIntervalSet)
+
+
+
+        then:"The model is correct"
+            assertNotNull("MarledItem is null!!!",markedItem)
+            assertNotNull markedItem.name
+            assertNotNull markedItem.organizer
+            assertNotNull markedItem.additionalOpenTimePeriod
+            assertNotNull markedItem.address
+            assertNotNull markedItem.entreInfo
+            assertNotNull markedItem.markedInformation
+            assertNotNull markedItem.markedRules
+            assertNotNull markedItem.dateInterval
+
     }
 
     void "Test the index action returns the correct model"() {
@@ -49,6 +84,11 @@ class MarkedItemControllerSpec extends Specification {
             populateValidParams(params)
             markedItem = new MarkedItem(params)
 
+
+        def di = new DateInterval(fromDate:  new Date(), toDate: new Date())
+        Set<DateInterval> dateIntervalSet = new HashSet<DateInterval>()
+        dateIntervalSet.add(di)
+        markedItem.setDateInterval(dateIntervalSet)
             controller.save(markedItem)
 
         then:"A redirect is issued to the show action"

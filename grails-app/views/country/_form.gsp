@@ -2,6 +2,22 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: countryInstance, field: 'createdBy', 'error')} ">
+	<label for="createdBy">
+		<g:message code="country.createdBy.label" default="Created By" />
+		
+	</label>
+	<g:textField name="createdBy" value="${countryInstance?.createdBy}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: countryInstance, field: 'modifiedBy', 'error')} ">
+	<label for="modifiedBy">
+		<g:message code="country.modifiedBy.label" default="Modified By" />
+		
+	</label>
+	<g:textField name="modifiedBy" value="${countryInstance?.modifiedBy}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: countryInstance, field: 'countryName', 'error')} required">
 	<label for="countryName">
 		<g:message code="country.countryName.label" default="Country Name" />

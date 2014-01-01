@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="kasper-one-Pc" name="dk.roninit.loppadmin.AddressControllerSpec" tests="7" time="11.489" timestamp="2013-12-14T22:10:38">
+  <properties />
+  <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test the index action returns the correct model" time="6.738" />
+  <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test the create action returns the correct model" time="0.462" />
+  <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test the save action correctly persists an instance" time="2.345" />
+  <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test that the show action returns the correct model" time="0.254" />
+  <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test that the edit action returns the correct model" time="0.248" />
+  <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.439" />
+  <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.395" />
+  <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+  <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+</testsuite>

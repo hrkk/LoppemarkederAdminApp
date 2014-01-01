@@ -15,6 +15,11 @@ class MarkedItemSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
+    void "test toString"() {
+        when:"toString executed"
+        def markedItem = new MarkedItem(name: "Marked 1").toString()
+
+        then: "toString is fomattet"
+        markedItem == "Marked 1"
     }
 }

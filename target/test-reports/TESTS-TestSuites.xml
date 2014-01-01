@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="kasper-one-Pc" id="0" name="AddressControllerSpec" package="dk.roninit.loppadmin" tests="7" time="11.489" timestamp="2013-12-14T22:10:38">
+      <properties />
+
+      <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test the index action returns the correct model" time="6.738" />
+
+      <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test the create action returns the correct model" time="0.462" />
+
+      <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test the save action correctly persists an instance" time="2.345" />
+
+      <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test that the show action returns the correct model" time="0.254" />
+
+      <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test that the edit action returns the correct model" time="0.248" />
+
+      <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.439" />
+
+      <testcase classname="dk.roninit.loppadmin.AddressControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.395" />
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kasper-one-Pc" id="1" name="AddressSpec" package="dk.roninit.loppadmin" tests="1" time="0.807" timestamp="2013-12-14T22:10:50">
+      <properties />
+
+      <testcase classname="dk.roninit.loppadmin.AddressSpec" name="test something" time="0.207" />
+
+      <system-out><![CDATA[--Output from test something--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test something--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kasper-one-Pc" id="2" name="CountryControllerSpec" package="dk.roninit.loppadmin" tests="7" time="3.136" timestamp="2013-12-14T22:10:51">
+      <properties />
+
+      <testcase classname="dk.roninit.loppadmin.CountryControllerSpec" name="Test the index action returns the correct model" time="0.973" />
+
+      <testcase classname="dk.roninit.loppadmin.CountryControllerSpec" name="Test the create action returns the correct model" time="0.209" />
+
+      <testcase classname="dk.roninit.loppadmin.CountryControllerSpec" name="Test the save action correctly persists an instance" time="0.444" />
+
+      <testcase classname="dk.roninit.loppadmin.CountryControllerSpec" name="Test that the show action returns the correct model" time="0.192" />
+
+      <testcase classname="dk.roninit.loppadmin.CountryControllerSpec" name="Test that the edit action returns the correct model" time="0.189" />
+
+      <testcase classname="dk.roninit.loppadmin.CountryControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.35" />
+
+      <testcase classname="dk.roninit.loppadmin.CountryControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.271" />
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kasper-one-Pc" id="3" name="CountrySpec" package="dk.roninit.loppadmin" tests="1" time="0.745" timestamp="2013-12-14T22:10:54">
+      <properties />
+
+      <testcase classname="dk.roninit.loppadmin.CountrySpec" name="test toString" time="0.197" />
+
+      <system-out><![CDATA[--Output from test toString--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test toString--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kasper-one-Pc" id="4" name="DateIntervalControllerSpec" package="dk.roninit.loppadmin" tests="7" time="3.129" timestamp="2013-12-14T22:10:55">
+      <properties />
+
+      <testcase classname="dk.roninit.loppadmin.DateIntervalControllerSpec" name="Test the index action returns the correct model" time="1.003" />
+
+      <testcase classname="dk.roninit.loppadmin.DateIntervalControllerSpec" name="Test the create action returns the correct model" time="0.237" />
+
+      <testcase classname="dk.roninit.loppadmin.DateIntervalControllerSpec" name="Test the save action correctly persists an instance" time="0.383" />
+
+      <testcase classname="dk.roninit.loppadmin.DateIntervalControllerSpec" name="Test that the show action returns the correct model" time="0.208" />
+
+      <testcase classname="dk.roninit.loppadmin.DateIntervalControllerSpec" name="Test that the edit action returns the correct model" time="0.258" />
+
+      <testcase classname="dk.roninit.loppadmin.DateIntervalControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.334" />
+
+      <testcase classname="dk.roninit.loppadmin.DateIntervalControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.269" />
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kasper-one-Pc" id="5" name="DateIntervalSpec" package="dk.roninit.loppadmin" tests="1" time="0.742" timestamp="2013-12-14T22:10:58">
+      <properties />
+
+      <testcase classname="dk.roninit.loppadmin.DateIntervalSpec" name="test toString" time="0.214" />
+
+      <system-out><![CDATA[--Output from test toString--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test toString--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kasper-one-Pc" id="6" name="MarkedItemControllerSpec" package="dk.roninit.loppadmin" tests="8" time="3.45" timestamp="2013-12-14T22:10:58">
+      <properties />
+
+      <testcase classname="dk.roninit.loppadmin.MarkedItemControllerSpec" name="Test domain" time="1.107" />
+
+      <testcase classname="dk.roninit.loppadmin.MarkedItemControllerSpec" name="Test the index action returns the correct model" time="0.253" />
+
+      <testcase classname="dk.roninit.loppadmin.MarkedItemControllerSpec" name="Test the create action returns the correct model" time="0.181" />
+
+      <testcase classname="dk.roninit.loppadmin.MarkedItemControllerSpec" name="Test the save action correctly persists an instance" time="0.443" />
+
+      <testcase classname="dk.roninit.loppadmin.MarkedItemControllerSpec" name="Test that the show action returns the correct model" time="0.188" />
+
+      <testcase classname="dk.roninit.loppadmin.MarkedItemControllerSpec" name="Test that the edit action returns the correct model" time="0.207" />
+
+      <testcase classname="dk.roninit.loppadmin.MarkedItemControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.363" />
+
+      <testcase classname="dk.roninit.loppadmin.MarkedItemControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.268" />
+
+      <system-out><![CDATA[--Output from Test domain--
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test domain--
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kasper-one-Pc" id="7" name="MarkedItemSpec" package="dk.roninit.loppadmin" tests="1" time="0.752" timestamp="2013-12-14T22:11:02">
+      <properties />
+
+      <testcase classname="dk.roninit.loppadmin.MarkedItemSpec" name="test toString" time="0.19" />
+
+      <system-out><![CDATA[--Output from test toString--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test toString--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kasper-one-Pc" id="8" name="OrganizerControllerSpec" package="dk.roninit.loppadmin" tests="7" time="3.089" timestamp="2013-12-14T22:11:03">
+      <properties />
+
+      <testcase classname="dk.roninit.loppadmin.OrganizerControllerSpec" name="Test the index action returns the correct model" time="0.89" />
+
+      <testcase classname="dk.roninit.loppadmin.OrganizerControllerSpec" name="Test the create action returns the correct model" time="0.227" />
+
+      <testcase classname="dk.roninit.loppadmin.OrganizerControllerSpec" name="Test the save action correctly persists an instance" time="0.51" />
+
+      <testcase classname="dk.roninit.loppadmin.OrganizerControllerSpec" name="Test that the show action returns the correct model" time="0.181" />
+
+      <testcase classname="dk.roninit.loppadmin.OrganizerControllerSpec" name="Test that the edit action returns the correct model" time="0.17" />
+
+      <testcase classname="dk.roninit.loppadmin.OrganizerControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.343" />
+
+      <testcase classname="dk.roninit.loppadmin.OrganizerControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.333" />
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="kasper-one-Pc" id="9" name="OrganizerSpec" package="dk.roninit.loppadmin" tests="1" time="1.056" timestamp="2013-12-14T22:11:06">
+      <properties />
+
+      <testcase classname="dk.roninit.loppadmin.OrganizerSpec" name="test toString" time="1.05" />
+
+      <system-out><![CDATA[--Output from test toString--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test toString--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

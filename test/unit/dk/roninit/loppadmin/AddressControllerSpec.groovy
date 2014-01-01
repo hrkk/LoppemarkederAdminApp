@@ -12,7 +12,15 @@ class AddressControllerSpec extends Specification {
     def populateValidParams(params) {
         assert params != null
         // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
+        params["longitude"] = 1
+        params["latitude"] = 1
+        params["postalCode"] = "4070"
+        params["postalArea"] = "Kr Hyllinge"
+        params["addressLine1"] = "addressLine1"
+        params["addressLine2"] = "addressLine1"
+        params["addressLine3"] = "addressLine1"
+        params["country"] = new Country(countryName: "Danmark", countryCode: "DK")
+
     }
 
     void "Test the index action returns the correct model"() {

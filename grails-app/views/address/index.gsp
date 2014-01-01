@@ -24,6 +24,10 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="createdBy" title="${message(code: 'address.createdBy.label', default: 'Created By')}" />
+					
+						<g:sortableColumn property="modifiedBy" title="${message(code: 'address.modifiedBy.label', default: 'Modified By')}" />
+					
 						<g:sortableColumn property="addressLine" title="${message(code: 'address.addressLine.label', default: 'Address Line')}" />
 					
 						<g:sortableColumn property="postalCode" title="${message(code: 'address.postalCode.label', default: 'Postal Code')}" />
@@ -32,27 +36,23 @@
 					
 						<g:sortableColumn property="longitude" title="${message(code: 'address.longitude.label', default: 'Longitude')}" />
 					
-						<th><g:message code="address.country.label" default="Country" /></th>
-					
-						<g:sortableColumn property="dateCreated" title="${message(code: 'address.dateCreated.label', default: 'Date Created')}" />
-					
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${addressInstanceList}" status="i" var="addressInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${addressInstance.id}">${fieldValue(bean: addressInstance, field: "addressLine")}</g:link></td>
+						<td><g:link action="show" id="${addressInstance.id}">${fieldValue(bean: addressInstance, field: "createdBy")}</g:link></td>
+					
+						<td>${fieldValue(bean: addressInstance, field: "modifiedBy")}</td>
+					
+						<td>${fieldValue(bean: addressInstance, field: "addressLine")}</td>
 					
 						<td>${fieldValue(bean: addressInstance, field: "postalCode")}</td>
 					
 						<td>${fieldValue(bean: addressInstance, field: "latitude")}</td>
 					
 						<td>${fieldValue(bean: addressInstance, field: "longitude")}</td>
-					
-						<td>${fieldValue(bean: addressInstance, field: "country")}</td>
-					
-						<td>${fieldValue(bean: addressInstance, field: "dateCreated")}</td>
 					
 					</tr>
 				</g:each>

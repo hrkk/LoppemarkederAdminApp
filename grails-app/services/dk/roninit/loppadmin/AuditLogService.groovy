@@ -14,6 +14,12 @@ class AuditLogService {
                 domainClass.metaClass.afterInsert = {
                     logChanges(delegate, "INSERT")
                 }
+                domainClass.metaClass.beforeInsert = {
+                    callSuperBeforeInsert(delegate)
+                }
+                domainClass.metaClass.beforeUpdate = {
+                    callSuperBeforeUpdate(delegate)
+                }
                 domainClass.metaClass.afterUpdate = {
                     logChanges(delegate, "UPDATE")
                 }
@@ -23,6 +29,18 @@ class AuditLogService {
             }
         }
     }
+
+    def callSuperBeforeInsert = { obj ->
+        println "call super.beforeInsert ${obj.class}"
+        obj.superBeforeInsert()
+    }
+
+
+    def callSuperBeforeUpdate= { obj ->
+        println "call super.beforeUpdate ${obj.class}"
+        obj.superBeforeUpdate()
+    }
+
 
     def logChanges = { obj, event ->
 

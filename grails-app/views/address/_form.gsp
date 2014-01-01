@@ -2,6 +2,22 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: addressInstance, field: 'createdBy', 'error')} ">
+	<label for="createdBy">
+		<g:message code="address.createdBy.label" default="Created By" />
+		
+	</label>
+	<g:textField name="createdBy" value="${addressInstance?.createdBy}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: addressInstance, field: 'modifiedBy', 'error')} ">
+	<label for="modifiedBy">
+		<g:message code="address.modifiedBy.label" default="Modified By" />
+		
+	</label>
+	<g:textField name="modifiedBy" value="${addressInstance?.modifiedBy}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: addressInstance, field: 'addressLine', 'error')} required">
 	<label for="addressLine">
 		<g:message code="address.addressLine.label" default="Address Line" />

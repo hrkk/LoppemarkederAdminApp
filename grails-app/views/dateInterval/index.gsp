@@ -24,6 +24,10 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="createdBy" title="${message(code: 'dateInterval.createdBy.label', default: 'Created By')}" />
+					
+						<g:sortableColumn property="modifiedBy" title="${message(code: 'dateInterval.modifiedBy.label', default: 'Modified By')}" />
+					
 						<g:sortableColumn property="fromDate" title="${message(code: 'dateInterval.fromDate.label', default: 'From Date')}" />
 					
 						<g:sortableColumn property="toDate" title="${message(code: 'dateInterval.toDate.label', default: 'To Date')}" />
@@ -38,13 +42,17 @@
 				<g:each in="${dateIntervalInstanceList}" status="i" var="dateIntervalInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${dateIntervalInstance.id}">${fieldValue(bean: dateIntervalInstance, field: "fromDate")}</g:link></td>
+						<td><g:link action="show" id="${dateIntervalInstance.id}">${fieldValue(bean: dateIntervalInstance, field: "createdBy")}</g:link></td>
+					
+						<td>${fieldValue(bean: dateIntervalInstance, field: "modifiedBy")}</td>
+					
+						<td><g:formatDate date="${dateIntervalInstance.fromDate}" /></td>
 					
 						<td><g:formatDate date="${dateIntervalInstance.toDate}" /></td>
 					
-						<td>${fieldValue(bean: dateIntervalInstance, field: "dateCreated")}</td>
+						<td><g:formatDate date="${dateIntervalInstance.dateCreated}" /></td>
 					
-						<td>${fieldValue(bean: dateIntervalInstance, field: "lastUpdated")}</td>
+						<td><g:formatDate date="${dateIntervalInstance.lastUpdated}" /></td>
 					
 					</tr>
 				</g:each>

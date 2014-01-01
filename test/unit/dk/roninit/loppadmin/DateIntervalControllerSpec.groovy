@@ -12,7 +12,8 @@ class DateIntervalControllerSpec extends Specification {
     def populateValidParams(params) {
         assert params != null
         // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
+        params["fromDate"] = new Date()
+        params["toDate"] = new Date()
     }
 
     void "Test the index action returns the correct model"() {

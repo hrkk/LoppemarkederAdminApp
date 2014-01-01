@@ -5,19 +5,18 @@
     <ignored path="LoppemarkederAdminApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/MarkedItem.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1384634102913" ignored="false" />
+    <file path="/MarkedItem.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1386537283482" ignored="false" />
     <file path="/BootStrap.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1365630694517" ignored="false" />
-    <file path="/Dummy.txt" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1384636317253" ignored="false" />
-    <file path="/a.dummy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1384636306233" ignored="false" />
+    <file path="/Dummy.txt" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1387052198634" ignored="false" />
+    <file path="/a.dummy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1386101732348" ignored="false" />
     <file path="/MarkedItemController.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1370797555333" ignored="false" />
     <file path="/DataSource.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1365018897841" ignored="false" />
     <file path="/main.gsp" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1365026476278" ignored="false" />
     <file path="/show.gsp" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1365705924096" ignored="false" />
     <file path="/_form.gsp" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1365706490888" ignored="false" />
     <file path="/DynamicAddData.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1368647581736" ignored="false" />
-    <file path="/fragment.java" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1368649644674" ignored="false" />
+    <file path="/fragment.java" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1384979446367" ignored="false" />
     <file path="/MarkItemGroovy.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1368882759616" ignored="false" />
-    <file path="$PROJECT_DIR$/target/stacktrace.log" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1368651347904" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/Grails/lib/grails_integration.jar!/org/jetbrains/plugins/grails/lang/gsp/resolve/taglib/tld/grails.tld" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1370896918991" ignored="false" />
     <file path="/Dummy.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1370896953748" ignored="false" />
     <file path="/UserAgentTrail.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1370797417776" ignored="false" />
@@ -27,13 +26,37 @@
     <file path="$PROJECT_DIR$/grails-app/views/userAgentTrail/show.gsp" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1370797431078" ignored="false" />
     <file path="$PROJECT_DIR$/grails-app/views/userAgentTrail/list.gsp" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1370797431078" ignored="false" />
     <file path="/UserAgentTrailController.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1370897447248" ignored="false" />
-    <file path="/Address.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1384633668222" ignored="false" />
-    <file path="/Organizer.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1384634473635" ignored="false" />
-    <file path="$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/DateIntervalControllerSpec.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1384632159883" ignored="false" />
-    <file path="/DateInterval.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1384633527866" ignored="false" />
-    <file path="/Country.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1384633689215" ignored="false" />
-    <file path="$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/AuditLogControllerSpec.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1384636332852" ignored="false" />
-    <file path="$PROJECT_DIR$/grails-app/controllers/dk/roninit/loppadmin/AuditLogController.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1384636332852" ignored="false" />
+    <file path="/Address.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1387054434239" ignored="false" />
+    <file path="/Organizer.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1387056185059" ignored="false" />
+    <file path="/DateInterval.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1386623938266" ignored="false" />
+    <file path="/Country.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1386100693805" ignored="false" />
+    <file path="/BuildConfig.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1384979208945" ignored="false" />
+    <file path="/CountryController.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385246798983" ignored="false" />
+    <file path="/BasicEntity.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385501190888" ignored="false" />
+    <file path="/Config.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385502404906" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/grails-app/domain/grailstest02/BasicEntity.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385500999216" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/grails-app/domain/grailstest02/Person.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385281552857" ignored="false" />
+    <file path="/Person.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385281544007" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/test/unit/grailstest02/PersonControllerSpec.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385292589397" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/grails-app/controllers/grailstest02/PersonController.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385310483121" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/grails-app/views/person/_form.gsp" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385292589397" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/grails-app/views/person/show.gsp" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385292589397" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/grails-app/views/person/index.gsp" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385292589397" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/grails-app/conf/BuildConfig.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385293949659" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/grails-app/conf/Config.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385319269918" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/grails-app/conf/BootStrap.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385310837939" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/grails-app/domain/grailstest02/NotPerson.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385319115561" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/test/unit/grailstest02/NotPersonControllerSpec.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385319164338" ignored="false" />
+    <file path="$PROJECT_DIR$/../GrailsTest02/grails-app/controllers/grailstest02/NotPersonController.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385319164338" ignored="false" />
+    <file path="/AuditLogService.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1385507188450" ignored="false" />
+    <file path="/AddressSpec.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1386104623114" ignored="false" />
+    <file path="/CountrySpec.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1386536421106" ignored="false" />
+    <file path="/MarkedItemSpec.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1386537197089" ignored="false" />
+    <file path="/OrganizerSpec.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1387056413009" ignored="false" />
+    <file path="/DateIntervalSpec.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1386537660014" ignored="false" />
+    <file path="/AddressControllerSpec.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1386624949717" ignored="false" />
+    <file path="/DateIntervalControllerSpec.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1387055727730" ignored="false" />
+    <file path="/MarkedItemControllerSpec.groovy" changelist="74b5eea2-3a3a-4579-a69f-5f2849aa2652" time="1387058582580" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +108,7 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -94,22 +118,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+      <file leaf-file-name="Address.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Address.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="41" selection-start="1994" selection-end="1994" vertical-scroll-proportion="0.0">
+            <state line="2" column="6" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.7083333">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarkedItem.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/MarkedItem.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="19" selection-start="120" selection-end="144" vertical-scroll-proportion="-1.7708334">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarkedItemControllerSpec.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/MarkedItemControllerSpec.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="87" selection-start="110" selection-end="110" vertical-scroll-proportion="0.19844358">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Address.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Address.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="ControllerUnitTestMixin.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/tools/grails-2.3.2/dist/grails-plugin-testing-2.3.2-sources.jar!/grails/test/mixin/web/ControllerUnitTestMixin.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="19" selection-start="278" selection-end="278" vertical-scroll-proportion="-4.2">
+            <state line="131" column="23" selection-start="5642" selection-end="5642" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrganizerControllerSpec.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/OrganizerControllerSpec.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="12" selection-start="122" selection-end="122" vertical-scroll-proportion="-5.173913">
               <folding />
             </state>
           </provider>
@@ -117,11 +171,29 @@
       </file>
       <file leaf-file-name="Organizer.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Organizer.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="6" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.7083333">
+              <folding />
+            </state>
+          </provider>
           <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrganizerSpec.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/OrganizerSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="3" selection-start="173" selection-end="211" vertical-scroll-proportion="-2.7">
+            <state line="19" column="49" selection-start="432" selection-end="432" vertical-scroll-proportion="-13.304348">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddressControllerSpec.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/AddressControllerSpec.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="34" selection-start="619" selection-end="619" vertical-scroll-proportion="-10.869565">
               <folding />
             </state>
           </provider>
@@ -129,69 +201,13 @@
       </file>
       <file leaf-file-name="Country.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Country.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="6" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.7083333">
+              <folding />
+            </state>
+          </provider>
           <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="20" selection-start="199" selection-end="199" vertical-scroll-proportion="-3.3">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="26" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuditLogService.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/dk/roninit/loppadmin/AuditLogService.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="94" selection-start="660" selection-end="660" vertical-scroll-proportion="0.5347092">
-              <folding>
-                <element signature="e#30#69#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuditLog.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/AuditLog.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="36" selection-start="506" selection-end="506" vertical-scroll-proportion="-6.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MarkedItem.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/MarkedItem.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="345" selection-end="345" vertical-scroll-proportion="-3.9">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateInterval.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/DateInterval.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="19" selection-start="128" selection-end="128" vertical-scroll-proportion="-2.4">
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -213,30 +229,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/groovy/loppemarkederadminapp/UpdateTracker.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/loppemarkederadminapp/UserAgentTrail.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/loppemarkederadminapp/Dummy.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/loppemarkederadminapp/DummyController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/loppemarkederadminapp/UserAgentTrailController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/loppemarkederadminapp/MarkedItemController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/MarkedItem.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Address.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/DateInterval.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Organizer.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/AuditLog.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/dk/roninit/loppadmin/AuditLogService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Country.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/CountrySpec.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/MarkedItemSpec.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/MarkedItem.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/DateInterval.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/DateIntervalSpec.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/BasicEntity.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/AddressSpec.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/CountryControllerSpec.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/DateIntervalControllerSpec.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Address.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Organizer.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/OrganizerSpec.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/AddressControllerSpec.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/OrganizerControllerSpec.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/MarkedItemControllerSpec.groovy" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="22" />
-    <option name="width" value="1900" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -266,13 +282,17 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="LoppemarkederAdminApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -282,6 +302,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LoppemarkederAdminApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoppemarkederAdminApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoppemarkederAdminApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loppadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoppemarkederAdminApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoppemarkederAdminApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -363,7 +419,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,21 +428,23 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Andriod-Loppemarkeder" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/grails-app/conf" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="dk.roninit.loppadmin" />
       <recent name="loppemarkederadminapp" />
       <recent name="" />
     </key>
@@ -418,20 +476,16 @@
         <option name="Make" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
+    <configuration default="false" name="test something()" type="GrailsRunConfigurationType" factoryName="Grails" temporary="true">
+      <module name="LoppemarkederAdminApp" />
       <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
+      <setting name="cmdLine" value="test-app unit: dk.roninit.loppadmin.AddressSpec.test something -echoOut" />
       <setting name="depsClasspath" value="true" />
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
@@ -443,25 +497,28 @@
       <setting name="debug" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="true" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -490,6 +547,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -546,17 +616,19 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Grails.Grails:LoppemarkederAdminApp" />
       <item index="1" class="java.lang.String" itemvalue="Groovy.Hello" />
       <item index="2" class="java.lang.String" itemvalue="Groovy.DynamicAddData" />
+      <item index="3" class="java.lang.String" itemvalue="Grails.test something()" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Groovy.DynamicAddData" />
-        <item index="1" class="java.lang.String" itemvalue="Groovy.Hello" />
-        <item index="2" class="java.lang.String" itemvalue="Groovy.DynamicAddData" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Grails.test something()" />
+        <item index="1" class="java.lang.String" itemvalue="Groovy.DynamicAddData" />
+        <item index="2" class="java.lang.String" itemvalue="Groovy.Hello" />
         <item index="3" class="java.lang.String" itemvalue="Groovy.DynamicAddData" />
+        <item index="4" class="java.lang.String" itemvalue="Groovy.DynamicAddData" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -611,20 +683,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="22" width="1900" height="1040" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2998325" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16774541" sideWeight="0.29456523" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24621212" sideWeight="0.29313233" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -632,15 +704,16 @@
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16774541" sideWeight="0.29347825" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16774541" sideWeight="0.3152174" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3902174" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24621212" sideWeight="0.67001677" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2914573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32663316" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -709,113 +782,130 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/dk/roninit/loppadmin/AddressController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="42" column="5" selection-start="1105" selection-end="1105" vertical-scroll-proportion="-7.4347825">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/share/grails-2.2.0/src/grails-datastore-gorm-1.1.2.RELEASE-sources.jar!/org/grails/datastore/gorm/GormStaticApi.groovy">
+    <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/AuditLogSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="6" selection-start="7188" selection-end="7188" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/share/grails-2.2.0/lib/org.springsource.springloaded/springloaded-core/jars/springloaded-core-1.1.1.jar!/org/springsource/loaded/ReloadableType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="28" selection-start="6132" selection-end="6132" vertical-scroll-proportion="-6.16" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/share/grails-2.2.0/lib/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.2.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="19" selection-start="7018" selection-end="7018" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.grails/2.2.0/projects/LoppemarkederAdminApp/plugins/cache-1.0.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="0" selection-start="7949" selection-end="7949" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="41" selection-start="1994" selection-end="1994" vertical-scroll-proportion="0.0">
+        <state line="9" column="6" selection-start="229" selection-end="229" vertical-scroll-proportion="-5.9130435">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Address.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/BasicEntitySpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="278" selection-end="278" vertical-scroll-proportion="-4.2">
+        <state line="9" column="6" selection-start="232" selection-end="232" vertical-scroll-proportion="-5.9130435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/CountryControllerSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="34" selection-start="376" selection-end="376" vertical-scroll-proportion="-10.347826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/DateIntervalControllerSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="21" selection-start="371" selection-end="371" vertical-scroll-proportion="-10.347826">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/DateInterval.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="71" selection-end="71" vertical-scroll-proportion="-1.4166666">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/AuditLogServiceSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="128" selection-end="128" vertical-scroll-proportion="-2.4">
+        <state line="9" column="6" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/MarkedItem.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Address.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.7083333">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Country.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="345" selection-end="345" vertical-scroll-proportion="-3.9">
+        <state line="2" column="6" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.7083333">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/AddressControllerSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="34" selection-start="619" selection-end="619" vertical-scroll-proportion="-10.869565">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Organizer.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.7083333">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/OrganizerSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="173" selection-end="211" vertical-scroll-proportion="-2.7">
+        <state line="19" column="49" selection-start="432" selection-end="432" vertical-scroll-proportion="-13.304348">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+    <entry file="jar://C:/tools/grails-2.3.2/dist/grails-plugin-testing-2.3.2-sources.jar!/grails/test/mixin/web/ControllerUnitTestMixin.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+        <state line="131" column="23" selection-start="5642" selection-end="5642" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/AuditLog.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/MarkedItem.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="120" selection-end="144" vertical-scroll-proportion="-1.7708334">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/OrganizerControllerSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="36" selection-start="506" selection-end="506" vertical-scroll-proportion="-6.0">
+        <state line="8" column="12" selection-start="122" selection-end="122" vertical-scroll-proportion="-5.173913">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/Country.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/test/unit/dk/roninit/loppadmin/MarkedItemControllerSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="199" selection-end="199" vertical-scroll-proportion="-3.3">
+        <state line="7" column="87" selection-start="110" selection-end="110" vertical-scroll-proportion="0.19844358">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/dk/roninit/loppadmin/AuditLogService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="94" selection-start="660" selection-end="660" vertical-scroll-proportion="0.5347092">
-          <folding>
-            <element signature="e#30#69#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,14 +916,14 @@
         <entry key="LoppemarkederAdminApp">
           <value>
             <GrailsSettings>
-              <option name="buildConfigCrc" value="649130217" />
-              <option name="pluginDependenciesCrc" value="-181327476" />
+              <option name="buildConfigCrc" value="-2031216608" />
+              <option name="pluginDependenciesCrc" value="-1016771866" />
               <option name="properties">
                 <map>
-                  <entry key="grails.global.plugins.dir" value="$USER_HOME$/.grails/2.3.2/global-plugins" />
-                  <entry key="grails.project.plugins.dir" value="target/work/plugins" />
-                  <entry key="grails.project.work.dir" value="target/work" />
-                  <entry key="grails.work.dir" value="$USER_HOME$/.grails/2.3.2" />
+                  <entry key="grails.global.plugins.dir" value="C:\Users\kasper-one\.grails\2.3.2\global-plugins" />
+                  <entry key="grails.project.plugins.dir" value="target\work\plugins" />
+                  <entry key="grails.project.work.dir" value="target\work" />
+                  <entry key="grails.work.dir" value="C:\Users\kasper-one\.grails\2.3.2" />
                 </map>
               </option>
             </GrailsSettings>

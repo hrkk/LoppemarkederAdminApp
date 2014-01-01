@@ -12,7 +12,10 @@ class OrganizerControllerSpec extends Specification {
     def populateValidParams(params) {
         assert params != null
         // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
+        params["name"] = 'someValidName'
+        params["phone"] = "12345678"
+        params["email"] = "mail@mail.dk"
+
     }
 
     void "Test the index action returns the correct model"() {

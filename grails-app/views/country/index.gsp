@@ -24,6 +24,10 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="createdBy" title="${message(code: 'country.createdBy.label', default: 'Created By')}" />
+					
+						<g:sortableColumn property="modifiedBy" title="${message(code: 'country.modifiedBy.label', default: 'Modified By')}" />
+					
 						<g:sortableColumn property="countryName" title="${message(code: 'country.countryName.label', default: 'Country Name')}" />
 					
 						<g:sortableColumn property="countryCode" title="${message(code: 'country.countryCode.label', default: 'Country Code')}" />
@@ -38,7 +42,11 @@
 				<g:each in="${countryInstanceList}" status="i" var="countryInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${countryInstance.id}">${fieldValue(bean: countryInstance, field: "countryName")}</g:link></td>
+						<td><g:link action="show" id="${countryInstance.id}">${fieldValue(bean: countryInstance, field: "createdBy")}</g:link></td>
+					
+						<td>${fieldValue(bean: countryInstance, field: "modifiedBy")}</td>
+					
+						<td>${fieldValue(bean: countryInstance, field: "countryName")}</td>
 					
 						<td>${fieldValue(bean: countryInstance, field: "countryCode")}</td>
 					

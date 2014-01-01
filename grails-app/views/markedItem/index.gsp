@@ -24,6 +24,10 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="createdBy" title="${message(code: 'markedItem.createdBy.label', default: 'Created By')}" />
+					
+						<g:sortableColumn property="modifiedBy" title="${message(code: 'markedItem.modifiedBy.label', default: 'Modified By')}" />
+					
 						<g:sortableColumn property="name" title="${message(code: 'markedItem.name.label', default: 'Name')}" />
 					
 						<g:sortableColumn property="additionalOpenTimePeriod" title="${message(code: 'markedItem.additionalOpenTimePeriod.label', default: 'Additional Open Time Period')}" />
@@ -32,27 +36,23 @@
 					
 						<g:sortableColumn property="markedRules" title="${message(code: 'markedItem.markedRules.label', default: 'Marked Rules')}" />
 					
-						<g:sortableColumn property="markedInformation" title="${message(code: 'markedItem.markedInformation.label', default: 'Marked Information')}" />
-					
-						<th><g:message code="markedItem.address.label" default="Address" /></th>
-					
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${markedItemInstanceList}" status="i" var="markedItemInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${markedItemInstance.id}">${fieldValue(bean: markedItemInstance, field: "name")}</g:link></td>
+						<td><g:link action="show" id="${markedItemInstance.id}">${fieldValue(bean: markedItemInstance, field: "createdBy")}</g:link></td>
+					
+						<td>${fieldValue(bean: markedItemInstance, field: "modifiedBy")}</td>
+					
+						<td>${fieldValue(bean: markedItemInstance, field: "name")}</td>
 					
 						<td>${fieldValue(bean: markedItemInstance, field: "additionalOpenTimePeriod")}</td>
 					
 						<td>${fieldValue(bean: markedItemInstance, field: "entreInfo")}</td>
 					
 						<td>${fieldValue(bean: markedItemInstance, field: "markedRules")}</td>
-					
-						<td>${fieldValue(bean: markedItemInstance, field: "markedInformation")}</td>
-					
-						<td>${fieldValue(bean: markedItemInstance, field: "address")}</td>
 					
 					</tr>
 				</g:each>

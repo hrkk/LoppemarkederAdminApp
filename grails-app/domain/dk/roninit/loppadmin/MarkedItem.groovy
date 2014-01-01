@@ -1,6 +1,6 @@
 package dk.roninit.loppadmin
 
-class MarkedItem {
+class MarkedItem extends BasicEntity {
 
     static hasMany = [dateInterval: DateInterval]
     def Address address
@@ -11,8 +11,6 @@ class MarkedItem {
     String entreInfo;
     String markedRules;
     String markedInformation;
-    def dateCreated
-    def lastUpdated
 
     static constraints = {
         name(size:1..50, maxSize: 50, blank: false)
@@ -20,5 +18,19 @@ class MarkedItem {
         entreInfo(size:1..256, blank: false)
         markedRules(size:1..256, blank: false)
         markedInformation(size:1..256, blank: false)
+    }
+
+    def beforeInsert() {
+        super.superBeforeInsert()
+    }
+
+    def beforeUpdate() {
+        super.superBeforeUpdate()
+    }
+
+
+    @Override
+    public java.lang.String toString() {
+        return name
     }
 }

@@ -23,6 +23,24 @@
 			</g:if>
 			<ol class="property-list markedItem">
 			
+				<g:if test="${markedItemInstance?.createdBy}">
+				<li class="fieldcontain">
+					<span id="createdBy-label" class="property-label"><g:message code="markedItem.createdBy.label" default="Created By" /></span>
+					
+						<span class="property-value" aria-labelledby="createdBy-label"><g:fieldValue bean="${markedItemInstance}" field="createdBy"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${markedItemInstance?.modifiedBy}">
+				<li class="fieldcontain">
+					<span id="modifiedBy-label" class="property-label"><g:message code="markedItem.modifiedBy.label" default="Modified By" /></span>
+					
+						<span class="property-value" aria-labelledby="modifiedBy-label"><g:fieldValue bean="${markedItemInstance}" field="modifiedBy"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${markedItemInstance?.name}">
 				<li class="fieldcontain">
 					<span id="name-label" class="property-label"><g:message code="markedItem.name.label" default="Name" /></span>
@@ -77,6 +95,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${markedItemInstance?.dateCreated}">
+				<li class="fieldcontain">
+					<span id="dateCreated-label" class="property-label"><g:message code="markedItem.dateCreated.label" default="Date Created" /></span>
+					
+						<span class="property-value" aria-labelledby="dateCreated-label"><g:formatDate date="${markedItemInstance?.dateCreated}" /></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${markedItemInstance?.dateInterval}">
 				<li class="fieldcontain">
 					<span id="dateInterval-label" class="property-label"><g:message code="markedItem.dateInterval.label" default="Date Interval" /></span>
@@ -88,29 +115,20 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${markedItemInstance?.lastUpdated}">
+				<li class="fieldcontain">
+					<span id="lastUpdated-label" class="property-label"><g:message code="markedItem.lastUpdated.label" default="Last Updated" /></span>
+					
+						<span class="property-value" aria-labelledby="lastUpdated-label"><g:formatDate date="${markedItemInstance?.lastUpdated}" /></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${markedItemInstance?.organizer}">
 				<li class="fieldcontain">
 					<span id="organizer-label" class="property-label"><g:message code="markedItem.organizer.label" default="Organizer" /></span>
 					
 						<span class="property-value" aria-labelledby="organizer-label"><g:link controller="organizer" action="show" id="${markedItemInstance?.organizer?.id}">${markedItemInstance?.organizer?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${markedItemInstance?.dateCreated}">
-				<li class="fieldcontain">
-					<span id="dateCreated-label" class="property-label"><g:message code="markedItem.dateCreated.label" default="Date Created" /></span>
-					
-						<span class="property-value" aria-labelledby="dateCreated-label"><g:fieldValue bean="${markedItemInstance}" field="dateCreated"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${markedItemInstance?.lastUpdated}">
-				<li class="fieldcontain">
-					<span id="lastUpdated-label" class="property-label"><g:message code="markedItem.lastUpdated.label" default="Last Updated" /></span>
-					
-						<span class="property-value" aria-labelledby="lastUpdated-label"><g:fieldValue bean="${markedItemInstance}" field="lastUpdated"/></span>
 					
 				</li>
 				</g:if>

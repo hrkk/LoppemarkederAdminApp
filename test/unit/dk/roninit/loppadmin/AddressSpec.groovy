@@ -16,5 +16,10 @@ class AddressSpec extends Specification {
     }
 
     void "test something"() {
+        when:"toString executed"
+        def adr = new Address(addressLine1 : "Skolestien 3").toString()
+
+        then: "toString is fomattet"
+          adr == "Skolestien 3"
     }
 }

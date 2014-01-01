@@ -1,0 +1,10 @@
+Testsuite: dk.roninit.loppadmin.DateIntervalSpec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0,742 sec
+------------- Standard Output ---------------
+--Output from test toString--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test toString--
+------------- ---------------- ---------------
+
+Testcase: test toString took 0,214 sec

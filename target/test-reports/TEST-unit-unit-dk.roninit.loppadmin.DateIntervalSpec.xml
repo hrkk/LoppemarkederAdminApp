@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="kasper-one-Pc" name="dk.roninit.loppadmin.DateIntervalSpec" tests="1" time="0.742" timestamp="2013-12-14T22:10:58">
+  <properties />
+  <testcase classname="dk.roninit.loppadmin.DateIntervalSpec" name="test toString" time="0.214" />
+  <system-out><![CDATA[--Output from test toString--
+]]></system-out>
+  <system-err><![CDATA[--Output from test toString--
+]]></system-err>
+</testsuite>

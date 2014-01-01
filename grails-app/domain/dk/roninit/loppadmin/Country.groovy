@@ -1,18 +1,31 @@
 package dk.roninit.loppadmin
 
-class Country {
+class Country extends BasicEntity {
 
     static hasMany = [addresses: Address]
     String countryName
     String countryCode
 
-    Date dateCreated
-    Date lastUpdated
 
-    static auditable
+
+   // static auditable
 
     static constraints = {
         countryName(size:1..50, maxSize: 50, blank: false)
         countryCode(size:1..2, maxSize: 2, blank: false)
+    }
+
+    def beforeInsert() {
+        super.superBeforeInsert()
+    }
+
+    def beforeUpdate() {
+        super.superBeforeUpdate()
+    }
+
+
+    @Override
+    public String toString() {
+        return countryName
     }
 }

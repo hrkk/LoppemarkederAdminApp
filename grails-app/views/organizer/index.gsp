@@ -24,6 +24,10 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="createdBy" title="${message(code: 'organizer.createdBy.label', default: 'Created By')}" />
+					
+						<g:sortableColumn property="modifiedBy" title="${message(code: 'organizer.modifiedBy.label', default: 'Modified By')}" />
+					
 						<g:sortableColumn property="firstName" title="${message(code: 'organizer.firstName.label', default: 'First Name')}" />
 					
 						<g:sortableColumn property="lastName" title="${message(code: 'organizer.lastName.label', default: 'Last Name')}" />
@@ -32,27 +36,23 @@
 					
 						<g:sortableColumn property="phone" title="${message(code: 'organizer.phone.label', default: 'Phone')}" />
 					
-						<g:sortableColumn property="dateCreated" title="${message(code: 'organizer.dateCreated.label', default: 'Date Created')}" />
-					
-						<g:sortableColumn property="lastUpdated" title="${message(code: 'organizer.lastUpdated.label', default: 'Last Updated')}" />
-					
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${organizerInstanceList}" status="i" var="organizerInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${organizerInstance.id}">${fieldValue(bean: organizerInstance, field: "firstName")}</g:link></td>
+						<td><g:link action="show" id="${organizerInstance.id}">${fieldValue(bean: organizerInstance, field: "createdBy")}</g:link></td>
+					
+						<td>${fieldValue(bean: organizerInstance, field: "modifiedBy")}</td>
+					
+						<td>${fieldValue(bean: organizerInstance, field: "firstName")}</td>
 					
 						<td>${fieldValue(bean: organizerInstance, field: "lastName")}</td>
 					
 						<td>${fieldValue(bean: organizerInstance, field: "email")}</td>
 					
 						<td>${fieldValue(bean: organizerInstance, field: "phone")}</td>
-					
-						<td>${fieldValue(bean: organizerInstance, field: "dateCreated")}</td>
-					
-						<td>${fieldValue(bean: organizerInstance, field: "lastUpdated")}</td>
 					
 					</tr>
 				</g:each>

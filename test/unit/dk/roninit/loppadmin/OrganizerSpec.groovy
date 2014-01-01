@@ -15,6 +15,11 @@ class OrganizerSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
+    void "test toString"() {
+        when:"toString executed"
+        def organizer = new Organizer(name: "Kim NNN").toString()
+
+        then: "toString is fomattet"
+        organizer == "Kim NNN"
     }
 }

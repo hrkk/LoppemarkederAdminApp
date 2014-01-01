@@ -2,6 +2,22 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: organizerInstance, field: 'createdBy', 'error')} ">
+	<label for="createdBy">
+		<g:message code="organizer.createdBy.label" default="Created By" />
+		
+	</label>
+	<g:textField name="createdBy" value="${organizerInstance?.createdBy}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: organizerInstance, field: 'modifiedBy', 'error')} ">
+	<label for="modifiedBy">
+		<g:message code="organizer.modifiedBy.label" default="Modified By" />
+		
+	</label>
+	<g:textField name="modifiedBy" value="${organizerInstance?.modifiedBy}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: organizerInstance, field: 'firstName', 'error')} ">
 	<label for="firstName">
 		<g:message code="organizer.firstName.label" default="First Name" />
@@ -32,6 +48,14 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="phone" maxlength="8" required="" value="${organizerInstance?.phone}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: organizerInstance, field: 'enableBooking', 'error')} ">
+	<label for="enableBooking">
+		<g:message code="organizer.enableBooking.label" default="Enable Booking" />
+		
+	</label>
+	<g:checkBox name="enableBooking" value="${organizerInstance?.enableBooking}" />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: organizerInstance, field: 'markedItem', 'error')} ">

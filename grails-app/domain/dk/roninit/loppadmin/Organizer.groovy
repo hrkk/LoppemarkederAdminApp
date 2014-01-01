@@ -1,19 +1,29 @@
 package dk.roninit.loppadmin
 
-class Organizer {
+class Organizer extends BasicEntity {
     static hasMany = [markedItem: MarkedItem]
-    String firstName
-    String lastName
+    String name
     String email
     String phone
-
-    Date dateCreated
-    Date lastUpdated
+    boolean enableBooking // currently it's a link
 
     static constraints = {
-        firstName size:1..50, maxSize: 50
-        lastName size:1..50, maxSize: 50
+        name size:1..50, maxSize: 50, blank: false
         email email: true, blank: false
         phone minSize: 8, maxSize: 8, blank: false
+    }
+
+    def beforeInsert() {
+        super.superBeforeInsert()
+    }
+
+    def beforeUpdate() {
+        super.superBeforeUpdate()
+    }
+
+
+    @Override
+    public java.lang.String toString() {
+        return name
     }
 }

@@ -12,7 +12,8 @@ class CountryControllerSpec extends Specification {
     def populateValidParams(params) {
         assert params != null
         // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
+       params["countryName"] = 'someValidName'
+       params["countryCode"] = 'DK'
     }
 
     void "Test the index action returns the correct model"() {

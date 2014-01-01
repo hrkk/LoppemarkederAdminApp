@@ -1,0 +1,10 @@
+Testsuite: dk.roninit.loppadmin.OrganizerSpec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1,056 sec
+------------- Standard Output ---------------
+--Output from test toString--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test toString--
+------------- ---------------- ---------------
+
+Testcase: test toString took 1,05 sec

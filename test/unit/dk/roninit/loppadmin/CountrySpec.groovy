@@ -15,6 +15,11 @@ class CountrySpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
+    void "test toString"() {
+        when:"toString executed"
+        def country = new Country(countryName: "Danmark").toString()
+
+        then: "toString is fomattet"
+        country == "Danmark"
     }
 }
