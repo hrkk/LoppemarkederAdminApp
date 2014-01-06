@@ -11,6 +11,8 @@ target/classes/application.properties
 
 target/classes/gsp/views.properties
 
+target/*
+
 *.data
 
 *.log
@@ -20,3 +22,57 @@ target/classes/gsp/views.properties
 target/stacktrace.log
 
 target/stacktrace.log
+
+target/work/plugins/cache-1.1.1/CacheGrailsPlugin.groovy
+
+target/work/plugins/cache-1.1.1/application.properties
+
+target/work/plugins/cache-1.1.1/dependencies.groovy
+
+target/work/plugins/cache-1.1.1/grails-app/conf/DefaultCacheConfig.groovy
+
+target/work/plugins/cache-1.1.1/grails-app/services/grails/plugin/cache/GrailsCacheAdminService.groovy
+
+target/work/plugins/cache-1.1.1/grails-app/taglib/grails/plugin/cache/CacheTagLib.groovy
+
+target/work/plugins/cache-1.1.1/plugin.xml
+
+target/work/plugins/cache-1.1.1/src/groovy/grails/plugin/cache/ConfigBuilder.groovy
+
+target/work/plugins/cache-1.1.1/src/groovy/grails/plugin/cache/ConfigLoader.groovy
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/BlockingCache.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/CacheBeanPostProcessor.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/CacheConfigArtefactHandler.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/ExpressionEvaluator.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/LazyParamAwareEvaluationContext.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/NoOpFilter.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/FilterServletOutputStream.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/DefaultWebKeyGenerator.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/CacheOperationContext.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/CacheExpressionRootObject.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/Header.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/HttpDateFormatter.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/AbstractFilter.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/SerializableCookie.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/ProxyAwareMixedGrailsControllerHelper.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/PageInfo.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java
+
+target/work/plugins/cache-1.1.1/src/java/grails/plugin/cache/web/filter/WebKeyGenerator.java
