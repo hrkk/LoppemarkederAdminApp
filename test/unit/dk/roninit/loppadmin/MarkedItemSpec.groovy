@@ -16,5 +16,10 @@ class MarkedItemSpec extends Specification {
     }
 
     void "test something"() {
+        when: "halløj"
+            def str = "str"
+
+        then: "halløj 2"
+            str == "str"
     }
 }
