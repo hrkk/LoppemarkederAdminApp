@@ -125,6 +125,8 @@ class MarkedItemController {
     }
 
     def listJSON2() {
+        // getAll markedCoreItems
+
         def list = MarkedItem.list()
 
         // remove timeout markets

@@ -127,6 +127,11 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/css/**':                     ['permitAll'],
 	'/**/images/**':                  ['permitAll'],
 	'/**/favicon.ico':                ['permitAll'],
-    '/markedItem/listJSON*':          ['permitAll']
+    '/markedItem/listJSON*':          ['permitAll'],
+    '/address/**':                    ['ROLE_ADMIN'],
+    '/coreMarkedItem/**':             ['ROLE_ADMIN'],
+    '/dateInterval/**':               ['ROLE_ADMIN'],
+    '/organizer/**':                  ['ROLE_ADMIN'],
+    '/country/**':                    ['ROLE_ADMIN']
 ]
 
