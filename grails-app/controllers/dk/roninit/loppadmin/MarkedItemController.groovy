@@ -126,8 +126,35 @@ class MarkedItemController {
 
     def listJSON2() {
         // getAll markedCoreItems
+        def allCoreMarkedItems = CoreMarkedItem.findAll()
 
-        def list = MarkedItem.list()
+        // build a MarkedItem list
+        def markedItemList = []
+
+
+        allCoreMarkedItems.eachWithIndex {coreMarkedItem, idx ->
+
+            // dateInterval is added as a new markedItem
+
+            coreMarkedItem.dateInterval.each { dateInterval ->
+
+                MarkedItem mi = new MarkedItem(name: coreMarkedItem.name,
+                        address: coreMarkedItem.address.addressLine1,
+                        fromDate: dateInterval.fromDate,
+                        toDate: dateInterval.toDate,
+                        dateExtraInfo: coreMarkedItem.additionalOpenTimePeriod,
+                        entreInfo: coreMarkedItem.entreInfo,
+                        markedRules: coreMarkedItem.markedRules,
+                        markedInformation: coreMarkedItem.markedInformation,
+                        latitude: coreMarkedItem.address.latitude,
+                        longitude: coreMarkedItem.address.longitude
+                )
+                mi.setId(++idx)
+                markedItemList.add(mi)
+
+            }
+        }
+        def list = markedItemList
 
         // remove timeout markets
         def listActive = []
@@ -146,7 +173,7 @@ class MarkedItemController {
                 Date toDateAsDate = it.toDate.toCalendar().getTime();
                 println toDateAsDate
                 // is toDate in the future or current date
-                if (toDateAsDate.after(nowAsDate) || toDateAsDate.equals(nowAsDate) ) {
+                if (toDateAsDate.after(nowAsDate) || toDateAsDate.equals(nowAsDate)) {
                     listActive << it
                 }
             } else {

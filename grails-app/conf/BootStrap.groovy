@@ -223,6 +223,7 @@ class BootStrap {
         if (!CoreMarkedItem.findByName("Brønshøj Torv")) {
             CoreMarkedItem coreMarkedItem = new CoreMarkedItem(name: "Brønshøj Torv",
                     entreInfo: 'Gratis adgang',
+                    additionalOpenTimePeriod: 'Åbent fra 9 til 15',
                     markedRules: 'Loppemarkedet på Brønshøj torv er et loppemarked, hvor du kun kan købe brugte ting.',
                     markedInformation: 'Markedet er udendørs med 70 pladser',
                     enabled: true,

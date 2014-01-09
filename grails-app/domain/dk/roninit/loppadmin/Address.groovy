@@ -5,8 +5,8 @@ class Address extends BasicEntity {
     static hasMany = [markeditems: CoreMarkedItem]
     def Country country
     static belongsTo = [Country]
-    double longitude
-    double latitude
+    BigDecimal longitude
+    BigDecimal latitude
 
     String postalCode    // zip Code
     String postalArea    // postal district

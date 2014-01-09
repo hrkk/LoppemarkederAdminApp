@@ -2,6 +2,7 @@ package dk.roninit.loppadmin
 
 import grails.test.mixin.TestFor
 import org.codehaus.groovy.grails.web.json.JSONArray
+import org.codehaus.groovy.grails.web.json.JSONObject
 import spock.lang.*
 
 @TestFor(MarkedItemController)
@@ -54,16 +55,18 @@ class ITMarkedItemControllerSpec extends Specification {
         aJSONArray.length() == 4
 
         aJSONArray.each { item ->
-            assert item.name != null
-            assert item.address != null
-            assert item.dateExtraInfo != null
-            assert item.entreInfo != null
-            assert item.fromDate != null
-            assert item.latitude != null
-            assert item.longitude != null
-            assert item.markedInformation != null
-            assert item.markedRules != null
-            assert item.toDate != null
+            println "item.id "+item.id
+            assert item.id.toString() != 'null'
+            assert item.name.toString() != 'null'
+            assert item.address.toString() != 'null'
+            assert item.dateExtraInfo.toString() != 'null'
+            assert item.entreInfo.toString() != 'null'
+            assert item.fromDate.toString() != 'null'
+            assert item.latitude.toString() != 'null'
+            assert item.longitude.toString() != 'null'
+            assert item.markedInformation.toString() != 'null'
+            assert item.markedRules.toString() != 'null'
+            assert item.toDate.toString() != 'null'
         }
     }
 }
