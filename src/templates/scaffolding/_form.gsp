@@ -24,6 +24,11 @@
 			%></fieldset><%
 		} else {
 			renderFieldForProperty(p, domainClass)
+            if("${p.name}" == "longitude") {
+                %>
+                <div class="message">Brug denne website til at finde latitude og longitude: <a href="http://universimmedia.pagesperso-orange.fr/geo/loc.htm">http://universimmedia.pagesperso-orange.fr/geo/loc.htm</a></div>
+                <%
+            }
 		}
 	}
 

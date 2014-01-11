@@ -24,6 +24,7 @@
 			<ol class="property-list ${domainClass.propertyName}">
 			<%  excludedProps = Event.allEvents.toList() << 'id' << 'version'
                 def entiName = "${domainClass.propertyName}"
+                def isEntityCountry = false
                 if( entiName == "country") {
                     excludedProps << 'addresses'
                 }
@@ -64,7 +65,8 @@
                 props << dateCreated
                 props << modifiedBy
                 props << lastUpdated
-				props.each { p -> %>
+				props.each { p ->
+                %>
 				<g:if test="\${${propertyName}?.${p.name}}">
 				<li class="fieldcontain">
 					<span id="${p.name}-label" class="property-label"><g:message code="${domainClass.propertyName}.${p.name}.label" default="${p.naturalName}" /></span>
