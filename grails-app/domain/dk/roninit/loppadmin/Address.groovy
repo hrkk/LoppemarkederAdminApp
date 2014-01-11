@@ -22,7 +22,10 @@ class Address extends BasicEntity {
         longitude(scale: 9, blank: false)
         postalCode(nullable: true, size:4..4, minSize: 4, maxSize: 4, blank: true)
         postalArea(nullable: true, size:1..100, maxSize: 100, blank: true)
+        markeditems display: false
     }
+
+
 
     def beforeInsert() {
         super.superBeforeInsert()

@@ -2,14 +2,12 @@ package dk.roninit.loppadmin
 
 class BasicEntity {
     transient springSecurityService
+    String createdBy
     Date dateCreated
+    String modifiedBy
     Date lastUpdated
 
-    String createdBy
-    String modifiedBy
-
     def superBeforeInsert() {
-        println "beforeInsert i BasicEntity domain!!"
         createdBy = getUsername()
     }
 
