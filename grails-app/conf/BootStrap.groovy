@@ -13,14 +13,16 @@ import java.text.SimpleDateFormat
 class BootStrap {
 
     def init = { servletContext ->
-        if (!Role.findByAuthority('ROLE_ADMIN')) {
-            def adminRole = new Role(authority: 'ROLE_ADMIN').save(flush: true)
-            def adminUser = new User(username: 'luke', enabled: true, password: 'skywalker')
-            adminUser.save(flush: true)
-
-            UserRole.create adminUser, adminRole, true
+        def adminRole = Role.findByAuthority('ROLE_ADMIN')
+        if (!adminRole) {
+            adminRole = new Role(authority: 'ROLE_ADMIN').save(flush: true)
         }
-
+        def adminUser = User.findByUsername("han")
+        if (!adminUser) {
+            adminUser = new User(username: 'han', enabled: true, password: 'solo')
+            adminUser.save(flush: true)
+            UserRole.create(adminUser, adminRole, true)
+        }
         Calendar fromDateBroenshoejTorv = Calendar.getInstance()
         fromDateBroenshoejTorv.set(Calendar.MONTH, Calendar.APRIL)
         fromDateBroenshoejTorv.set(Calendar.DATE, 5)
@@ -124,8 +126,8 @@ class BootStrap {
         }
 
         // addresse
-        Address adrBroenshoej
-        if (!Address.findByAddressLine1("Frederikssundsvej, 2700 Brønshøj")) {
+        Address adrBroenshoej   = Address.findByAddressLine1("Frederikssundsvej, 2700 Brønshøj")
+        if (!adrBroenshoej) {
             adrBroenshoej = new Address(addressLine1: "Frederikssundsvej, 2700 Brønshøj",
                     latitude: 55.7043,
                     longitude: 12.49906,
@@ -136,8 +138,8 @@ class BootStrap {
             adrBroenshoej = adrBroenshoej.save(flush: true)
         }
 
-        Address adrFarum
-        if (!Address.findByAddressLine1("Stavnsholtvej 41, 3520 Farum")) {
+        Address adrFarum    = Address.findByAddressLine1("Stavnsholtvej 41, 3520 Farum")
+        if (!adrFarum) {
             adrFarum = new Address(addressLine1: "Stavnsholtvej 41, 3520 Farum",
                     latitude: 55.81447,
                     longitude: 12.39431,
@@ -148,8 +150,8 @@ class BootStrap {
             adrFarum = adrFarum.save(flush: true)
         }
 
-        Address adrHilleroed
-        if (!Address.findByAddressLine1("Milnersvej 39, 3400 Hillerød")) {
+        Address adrHilleroed = Address.findByAddressLine1("Milnersvej 39, 3400 Hillerød")
+        if (!adrHilleroed) {
             adrHilleroed = new Address(addressLine1: "Milnersvej 39, 3400 Hillerød",
                     latitude: 55.92213,
                     longitude: 12.29992,
@@ -160,8 +162,8 @@ class BootStrap {
             adrHilleroed = adrHilleroed.save(flush: true)
         }
 
-        Address adrSlagelse
-        if (!Address.findByAddressLine1("Parkvej 33")) {
+        Address adrSlagelse = Address.findByAddressLine1("Parkvej 33")
+        if (!adrSlagelse) {
             adrSlagelse = new Address(addressLine1: "Parkvej 33",
                     latitude: 55.40096,
                     longitude: 11.3628,
@@ -171,48 +173,54 @@ class BootStrap {
         }
 
         // organizer
-        Organizer torbenKruseOrganizer
-        if (!Organizer.findByEmail("info@markedsbooking.dk")) {
+        Organizer torbenKruseOrganizer    = Organizer.findByEmail("info@markedsbooking.dk")
+        if (!torbenKruseOrganizer) {
             torbenKruseOrganizer = new Organizer(name: "Loppekompagniet ApS v/ Torben Kruse", email: "info@markedsbooking.dk", enableBooking: true)
             torbenKruseOrganizer = torbenKruseOrganizer.save(flush: true)
         }
-        Organizer anonymousOrganizer
-        if (!Organizer.findByEmail("mail@mail.dk")) {
+        Organizer anonymousOrganizer =  Organizer.findByEmail("mail@mail.dk")
+        if (!anonymousOrganizer) {
             anonymousOrganizer = new Organizer(name: "anonymousOrganizer", email: "mail@mail.dk", enableBooking: false)
             anonymousOrganizer = anonymousOrganizer.save(flush: true)
         }
 
         // DateInterval
         boolean contiansfromDateBroenshoejTorv
+        DateInterval dateIntervalDateBroenshoejTorv
         boolean contiansfromDateFarumArena
+        DateInterval dateIntervalFarumArena
         boolean contiansfromDateFrederiksborghallen
+        DateInterval dateIntervalFrederiksborghallen
         DateInterval.findAll().each { it ->
             SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy")
             String formatted = sdf.format(it.fromDate)
             if (formatted.equals("05-04-2014")) {
                 contiansfromDateBroenshoejTorv = true
+                dateIntervalDateBroenshoejTorv = it
             }
 
             if (formatted.equals("22-02-2014")) {
                 contiansfromDateFarumArena = true
+                dateIntervalFarumArena = it
             }
 
             if (formatted.equals("25-01-2014")) {
                 contiansfromDateFrederiksborghallen = true
+                dateIntervalFrederiksborghallen = it
             }
         }
 
-        DateInterval dateIntervalDateBroenshoejTorv
+
         if (!contiansfromDateBroenshoejTorv) {
             dateIntervalDateBroenshoejTorv = new DateInterval(fromDate: fromDateBroenshoejTorv.getTime(), toDate: toDateBroenshoejTorv.getTime())
             dateIntervalDateBroenshoejTorv = dateIntervalDateBroenshoejTorv.save(flush: true)
         }
-        DateInterval dateIntervalFarumArena
+
         if (!contiansfromDateFarumArena) {
             dateIntervalFarumArena = new DateInterval(fromDate: fromDateFarumArena.getTime(), toDate: toDateFarumArena.getTime())
             dateIntervalFarumArena = dateIntervalFarumArena.save(flush: true)
         }
-        DateInterval dateIntervalFrederiksborghallen
+
 
         if (!contiansfromDateFrederiksborghallen) {
             dateIntervalFrederiksborghallen = new DateInterval(fromDate: fromDateFrederiksborghallen.getTime(), toDate: toDateFrederiksborghallen.getTime())

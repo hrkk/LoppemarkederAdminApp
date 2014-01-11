@@ -15,11 +15,11 @@ class Address extends BasicEntity {
     String addressLine3
 
     static constraints = {
-        latitude(scale: 9, blank: false)
-        longitude(scale: 9, blank: false)
         addressLine1(size: 1..100, maxSize: 100, blank: false)
         addressLine2(nullable: true, size: 0..100, maxSize: 100, blank: true)
         addressLine3(nullable: true, size: 0..100, maxSize: 100, blank: true)
+        latitude(scale: 9, blank: false)
+        longitude(scale: 9, blank: false)
         postalCode(nullable: true, size:4..4, minSize: 4, maxSize: 4, blank: true)
         postalArea(nullable: true, size:1..100, maxSize: 100, blank: true)
     }
