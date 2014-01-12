@@ -11,7 +11,7 @@ class CoreMarkedItem extends BasicEntity {
     String entreInfo;
     String markedRules;
     String markedInformation;
-    boolean enabled
+    boolean enabled = true
 
     static constraints = {
         name(size:1..50, maxSize: 50, blank: false)
@@ -19,7 +19,6 @@ class CoreMarkedItem extends BasicEntity {
         entreInfo(size:1..256, blank: false)
         markedRules(size:1..256, blank: false)
         markedInformation(size:1..256, blank: false)
-        enabled()
     }
 
     def beforeInsert() {

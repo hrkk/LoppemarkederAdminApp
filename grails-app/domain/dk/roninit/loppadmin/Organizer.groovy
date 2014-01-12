@@ -11,6 +11,7 @@ class Organizer extends BasicEntity {
         name size:1..50, maxSize: 50, blank: false
         email email: true, blank: false
         phone nullable: true, minSize: 8, maxSize: 8, blank: true
+        markedItem display: false
     }
 
     def beforeInsert() {

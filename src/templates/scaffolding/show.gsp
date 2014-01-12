@@ -24,7 +24,6 @@
 			<ol class="property-list ${domainClass.propertyName}">
 			<%  excludedProps = Event.allEvents.toList() << 'id' << 'version'
                 def entiName = "${domainClass.propertyName}"
-                def isEntityCountry = false
                 if( entiName == "country") {
                     excludedProps << 'addresses'
                 }

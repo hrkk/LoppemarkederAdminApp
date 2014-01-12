@@ -25,8 +25,6 @@ class Address extends BasicEntity {
         markeditems display: false
     }
 
-
-
     def beforeInsert() {
         super.superBeforeInsert()
     }

@@ -103,13 +103,17 @@
 			</ul>
 		</div>
 		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>Congratulations, you have successfully started your first Grails application! At the moment
-			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
-			   content you may choose. Below is a list of controllers that are currently deployed in this application,
-			   click on each to execute its default action:</p>
-
+			<h1>Welcome to LoppemarkederAdminApp</h1>
+			<p>Se oprettede markeder: <g:link controller="coreMarkedItem">coreMarkedItem</g:link></p>
 			<div id="controller-list" role="navigation">
+                <h2>Check liste til oprettelses af nyt marked:</h2>
+                <ul>
+                    <li class="controller">Opret ny adresse: <g:link controller="address">address</g:link></li>
+                    <li class="controller">Opret dato interval: <g:link controller="dateInterval">dateInterval</g:link></li>
+                    <li class="controller">Opret markedes ansvarlig: <g:link controller="organizer">organizer</g:link></li>
+                    <li class="controller">Opret marked: <g:link controller="coreMarkedItem">coreMarkedItem</g:link></li>
+                </ul>
+                <br/>
 				<h2>Available Controllers:</h2>
 				<ul>
 					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
