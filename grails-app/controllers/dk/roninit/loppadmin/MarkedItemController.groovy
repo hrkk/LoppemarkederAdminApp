@@ -10,7 +10,7 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class MarkedItemController {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    static allowedMethods = [save: "POST", saveJSON: "POST", update: "PUT", delete: "DELETE"]
 
     @Secured(['ROLE_ADMIN'])
     def index(Integer max) {
@@ -186,6 +186,10 @@ class MarkedItemController {
         }
         def obj = [markedItemInstanceList: listActive, markedItemInstanceTotal: listActive.size()]
         render obj as JSON
+    }
+
+    def saveJSON() {
+        println "saveJSON called!!!"
     }
 
 }

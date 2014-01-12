@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/GroovyTestModule/GroovyTestModule.iml" filepath="$PROJECT_DIR$/GroovyTestModule/GroovyTestModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/LoppemarkederAdminApp.iml" filepath="$PROJECT_DIR$/LoppemarkederAdminApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/LoppemarkederAdminApp-grailsPlugins.iml" filepath="$PROJECT_DIR$/LoppemarkederAdminApp-grailsPlugins.iml" />
     </modules>
