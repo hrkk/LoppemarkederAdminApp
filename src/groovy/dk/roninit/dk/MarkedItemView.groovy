@@ -14,6 +14,11 @@ class MarkedItemView {
     BigDecimal latitude
     BigDecimal longitude
 
+    // organizer
+    String organizerName
+    String organizerEmail
+    String organizerPhone
+
     BigDecimal getLatitude() {
         return latitude
     }
