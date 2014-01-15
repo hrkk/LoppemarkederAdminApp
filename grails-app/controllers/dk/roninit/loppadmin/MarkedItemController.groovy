@@ -126,18 +126,14 @@ class MarkedItemController {
 
     def listJSON2() {
         // getAll markedCoreItems
-        def allCoreMarkedItems = CoreMarkedItem.findAll()
+        def allCoreMarkedItems = CoreMarkedItem.findAllByEnabled(true)
 
         // build a MarkedItem list
         def markedItemList = []
 
-
         allCoreMarkedItems.eachWithIndex {coreMarkedItem, idx ->
-
             // dateInterval is added as a new markedItem
-
             coreMarkedItem.dateInterval.each { dateInterval ->
-
                 MarkedItem mi = new MarkedItem(name: coreMarkedItem.name,
                         address: coreMarkedItem.address.addressLine1,
                         fromDate: dateInterval.fromDate,
