@@ -18,6 +18,8 @@ class MarkedItemController {
         respond MarkedItem.list(params), model: [markedItemInstanceCount: MarkedItem.count()]
     }
 
+
+
     @Secured(['ROLE_ADMIN'])
     def show(MarkedItem markedItemInstance) {
         respond markedItemInstance

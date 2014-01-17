@@ -3,19 +3,24 @@ package dk.roninit.loppadmin
 import dk.roninit.dk.MarkedItemView
 import grails.rest.RestfulController
 import org.springframework.http.HttpStatus
+import org.springframework.mail.MailSender
 
 import java.text.SimpleDateFormat
 
 class MarkedItemRestController extends RestfulController {
+
+    def mailService
+
     static responseFormats = ['json', 'xml']
 
     MarkedItemRestController() {
         super(MarkedItemView)
     }
 
-
-    def saveJSON(MarkedItemView view) {
-        println "save!!! " + view
+    def saveJSONAndroid(MarkedItemView view) {
+        saveJSON(view, "Android")
+    }
+    def saveJSON(MarkedItemView view, def mobilePlatform) {
         // Address
         Address address   = Address.findByAddressLine1(view.getAddress())
         if (!address || (address != null && address.longitude != view.longitude && address.latitude != view.latitude)) {
@@ -30,7 +35,7 @@ class MarkedItemRestController extends RestfulController {
         // organizer
         Organizer organizer    = Organizer.findByEmail(view.organizerEmail)
         if (!organizer) {
-            organizer = new Organizer(name: view.organizerName, email: view.organizerEmail, phone: view.organizerPhone, enableBooking: true)
+            organizer = new Organizer(name: view.organizerName, email: view.organizerEmail, phone: view.organizerPhone, enableBooking: false)
             organizer = organizer.save(flush: true)
         }
 
@@ -78,6 +83,7 @@ class MarkedItemRestController extends RestfulController {
             intervalSet.add(dateInterval)
 
             coreMarkedItem1.save(flush: true)
+            sendMyMail(coreMarkedItem1, "Dato interval tilføjet til marked", mobilePlatform)
         }
 
         // marked does not exist
@@ -92,9 +98,16 @@ class MarkedItemRestController extends RestfulController {
                     address: address,
                     organizer: organizer)
             coreMarkedItem.save(flush: true)
+            sendMyMail(coreMarkedItem, "Nyt marked oprettet", mobilePlatform)
         }
-
-        // send email to Torben!!
         render status: HttpStatus.OK
+    }
+
+    def sendMyMail( CoreMarkedItem coreMarkedItem,  def mailSubject, def mobilePlatform) {
+        mailService.sendMail {
+            to "kasper.odgaard@gmail.com", "markedsbooking@gmail.com"
+            subject mailSubject + " fra en ${mobilePlatform}"
+            html g.render(model: [marked: coreMarkedItem], template: "markedMailTemplate")
+        }
     }
 }
