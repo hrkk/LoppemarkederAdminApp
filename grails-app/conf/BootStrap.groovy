@@ -14,10 +14,6 @@ class BootStrap {
 
         UserRole.create adminUser, adminRole, true
 
-        assert User.count() == 1
-        assert Role.count() == 2
-        assert UserRole.count() == 1
-
         if (!MarkedItem.count()) {
 
             Calendar fromDate =  Calendar.getInstance()
