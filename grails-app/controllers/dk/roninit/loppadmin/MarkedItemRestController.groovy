@@ -21,6 +21,15 @@ class MarkedItemRestController extends RestfulController {
         saveJSON(view, "Android")
     }
     def saveJSON(MarkedItemView view, def mobilePlatform) {
+        // organizer
+        Organizer organizer    = Organizer.findByEmail(view.organizerEmail)
+        if (!organizer) {
+            organizer = new Organizer(name: view.organizerName
+                    , email: view.organizerEmail
+                    , phone: view.organizerPhone
+                    , enableBooking: false)
+            organizer = organizer.save(flush: true)
+        }
         // Address
         Address address   = Address.findByAddressLine1(view.getAddress())
         if (!address || (address != null && address.longitude != view.longitude && address.latitude != view.latitude)) {
@@ -32,12 +41,7 @@ class MarkedItemRestController extends RestfulController {
             address = address.save(flush: true)
         }
 
-        // organizer
-        Organizer organizer    = Organizer.findByEmail(view.organizerEmail)
-        if (!organizer) {
-            organizer = new Organizer(name: view.organizerName, email: view.organizerEmail, phone: view.organizerPhone, enableBooking: false)
-            organizer = organizer.save(flush: true)
-        }
+
 
         DateInterval dateInterval
 

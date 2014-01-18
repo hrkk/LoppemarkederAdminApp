@@ -161,9 +161,11 @@ class MarkedItemController {
         Date nowAsDate = getDateWithoutTime(Calendar.getInstance());
         println "nowAsDate " + nowAsDate
 
-        list.each { it ->
+        list.eachWithIndex { it, idx ->
             // fix the dates
             it.setFromDate(getDateWithoutTime(it.fromDate.toCalendar()))
+            // fix the id
+            it.setId(++idx)
 
             // first the toDate is checked
             if (it.toDate != null) {
@@ -185,9 +187,4 @@ class MarkedItemController {
         def obj = [markedItemInstanceList: listActive, markedItemInstanceTotal: listActive.size()]
         render obj as JSON
     }
-
-    def saveJSON() {
-        println "saveJSON called!!!"
-    }
-
 }
