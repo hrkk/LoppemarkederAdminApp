@@ -28,7 +28,7 @@
                             excludedProps << 'enableBooking'
                         }
                         if( "${domainClass.propertyName}" == "coreMarkedItem") {
-                            excludedProps << 'enabled' << 'additionalOpenTimePeriod'
+                            excludedProps << 'entreInfo' << 'additionalOpenTimePeriod'
                         }
 						allowedNames = domainClass.persistentProperties*.name << 'dateCreated' << 'lastUpdated'
 						props = domainClass.properties.findAll { allowedNames.contains(it.name) && !excludedProps.contains(it.name) && it.type != null && !Collection.isAssignableFrom(it.type) }
@@ -37,9 +37,15 @@
 							if (i < 6) {
 								if (p.isAssociation()) { %>
 						<th><g:message code="${domainClass.propertyName}.${p.name}.label" default="${p.naturalName}" /></th>
-					<%      } else { %>
+					<%      } else {
+                        if( "${domainClass.propertyName}" == "coreMarkedItem" &&  "${p.name}" == "enabled") {
+                    println "propertyName : ${domainClass.propertyName}"
+                    println "name : ${p.name}"
+
+                    %> <g:sortableColumn property="${p.name}" title="\${message(code: '${domainClass.propertyName}.${p.name}.labelNoToBeFound', default: '${p.naturalName}')}" /> <%
+                        } else { %>
 						<g:sortableColumn property="${p.name}" title="\${message(code: '${domainClass.propertyName}.${p.name}.label', default: '${p.naturalName}')}" />
-					<%  }   }   } %>
+					<%  }   }   } }%>
 					</tr>
 				</thead>
 				<tbody>

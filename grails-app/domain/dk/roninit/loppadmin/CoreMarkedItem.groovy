@@ -16,9 +16,10 @@ class CoreMarkedItem extends BasicEntity {
     static constraints = {
         name(size:1..50, maxSize: 50, blank: false)
         additionalOpenTimePeriod(nullable: true, size:1..256, blank: true)
-        entreInfo(size:1..256, blank: false)
         markedRules(size:1..256, blank: false)
         markedInformation(size:1..256, blank: false)
+        enabled()
+        entreInfo(size:1..256, blank: false)
     }
 
     def beforeInsert() {

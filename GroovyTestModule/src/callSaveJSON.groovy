@@ -33,8 +33,8 @@ String JSON_STRING = "{\"class\":\" dk.roninit.dk.MarkedItemView\"" +
         ",\"address\":\"JSON address\"" +
         ",\"fromDate\":\"${fromDate}\"" +
         ",\"toDate\":\"${toDate}\"" +
-    //    ",\"latitude\":${BigDecimal.valueOf(111.123451)}" +
-    //    ",\"longitude\":${BigDecimal.valueOf(91.000002)}" +
+        ",\"latitude\":${BigDecimal.valueOf(111.123451)}" +
+        ",\"longitude\":${BigDecimal.valueOf(91.000002)}" +
         ",\"organizerName\":\"JSON organizerName\"" +
         ",\"organizerEmail\":\"json@mail.dk\"" +
         ",\"organizerPhone\":\"12345678\"" +
