@@ -43,6 +43,8 @@ class MarkedItemView {
         this.longitude = longitude
     }
 
+
+
     @Override
     public java.lang.String toString() {
         return "MarkedItemView{" +
@@ -52,10 +54,13 @@ class MarkedItemView {
                 ", markedRules='" + markedRules + '\'' +
                 ", markedInformation='" + markedInformation + '\'' +
                 ", address='" + address + '\'' +
-                ", fromDate='" + fromDate + '\'' +
-                ", toDate='" + toDate + '\'' +
-                ", latitude='" + latitude + '\'' +
-                ", longitude='" + longitude + '\'' +
+                ", fromDate=" + fromDate +
+                ", toDate=" + toDate +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                ", organizerName='" + organizerName + '\'' +
+                ", organizerEmail='" + organizerEmail + '\'' +
+                ", organizerPhone='" + organizerPhone + '\'' +
                 '}';
     }
 }

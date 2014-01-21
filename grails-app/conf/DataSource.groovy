@@ -1,13 +1,23 @@
 dataSource {
-   // pooled = true
-   // driverClassName = "org.h2.Driver"
-   // username = "sa"
-   // password = ""
-    pooled = true
-    driverClassName = "com.mysql.jdbc.Driver"
-    dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
-    username = "grails"
-    password = "server"
+    development {
+        pooled = true
+        driverClassName = "org.h2.Driver"
+        username = "sa"
+        password = ""
+    }
+    test {
+        pooled = true
+        driverClassName = "org.h2.Driver"
+        username = "sa"
+        password = ""
+    }
+    production {
+        pooled = true
+        driverClassName = "com.mysql.jdbc.Driver"
+        dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
+        username = "grails"
+        password = "server"
+    }
 }
 hibernate {
     cache.use_second_level_cache = true
