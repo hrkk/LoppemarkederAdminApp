@@ -39,9 +39,6 @@
 						<th><g:message code="${domainClass.propertyName}.${p.name}.label" default="${p.naturalName}" /></th>
 					<%      } else {
                         if( "${domainClass.propertyName}" == "coreMarkedItem" &&  "${p.name}" == "enabled") {
-                    println "propertyName : ${domainClass.propertyName}"
-                    println "name : ${p.name}"
-
                     %> <g:sortableColumn property="${p.name}" title="\${message(code: '${domainClass.propertyName}.${p.name}.labelNoToBeFound', default: '${p.naturalName}')}" /> <%
                         } else { %>
 						<g:sortableColumn property="${p.name}" title="\${message(code: '${domainClass.propertyName}.${p.name}.label', default: '${p.naturalName}')}" />
