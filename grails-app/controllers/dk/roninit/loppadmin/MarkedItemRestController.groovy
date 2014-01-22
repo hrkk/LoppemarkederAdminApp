@@ -22,13 +22,6 @@ class MarkedItemRestController extends RestfulController {
     }
 
     def saveJSON(MarkedItemView view, def mobilePlatform) {
-//        if (!view.latitude || !view.longitude) {
-//            mailService.sendMail {
-//                to "kasper.odgaard@gmail.com", "markedsbooking@gmail.com"
-//                subject "Nyt marked oprettet fra en ${mobilePlatform}"
-//                html g.render(model: [marked: view], template: "markedMailManuelTemplate")
-//            }
-//        } else {
             try {
             // organizer
             Organizer organizer = Organizer.findByEmail(view.organizerEmail)
@@ -37,7 +30,7 @@ class MarkedItemRestController extends RestfulController {
                         , email: view.organizerEmail
                         , phone: view.organizerPhone
                         , enableBooking: false)
-                organizer = organizer.save(flush: true)
+                organizer = organizer.save(flush: true, failOnError: true)
             }
             // Address
             Address address = Address.findByAddressLine1(view.getAddress())
@@ -47,7 +40,7 @@ class MarkedItemRestController extends RestfulController {
                         longitude: view.longitude,
                         country: Country.findByCountryCode("DK"));
 
-                address = address.save(flush: true)
+                address = address.save(flush: true, failOnError: true)
             }
 
 
@@ -66,7 +59,7 @@ class MarkedItemRestController extends RestfulController {
 
             if (!dateInterval) {
                 dateInterval = new DateInterval(fromDate: view.fromDate.getTime(), toDate: view.toDate.getTime())
-                dateInterval = dateInterval.save(flush: true)
+                dateInterval = dateInterval.save(flush: true, failOnError: true)
             }
 
             // should I check that the marked is already exists
@@ -95,7 +88,7 @@ class MarkedItemRestController extends RestfulController {
                 def intervalSet = coreMarkedItem1.dateInterval
                 intervalSet.add(dateInterval)
 
-                coreMarkedItem1.save(flush: true)
+                coreMarkedItem1.save(flush: true, failOnError: true)
                 sendMyMail(coreMarkedItem1, view, "Dato interval tilføjet til marked", mobilePlatform)
             }
 
@@ -116,13 +109,12 @@ class MarkedItemRestController extends RestfulController {
             } catch (Exception e) {
                 sendMailManuel(view, mobilePlatform)
             }
-      //  }
         render status: HttpStatus.OK
     }
 
     private void sendMyMail(CoreMarkedItem coreMarkedItem, MarkedItemView view, def mailSubject, def mobilePlatform) {
         mailService.sendMail {
-            to "kasper.odgaard@gmail.com", "markedsbooking@gmail.com"
+            to "info@markedsbooking.dk", "markedsbooking@gmail.com"
             subject mailSubject + " fra en ${mobilePlatform}"
             html g.render(model: [marked: coreMarkedItem, view: view], template: "markedMailTemplate")
         }
@@ -130,7 +122,7 @@ class MarkedItemRestController extends RestfulController {
 
     private void sendMailManuel(MarkedItemView view, def mobilePlatform) {
         mailService.sendMail {
-            to "kasper.odgaard@gmail.com", "markedsbooking@gmail.com"
+            to "info@markedsbooking.dk", "markedsbooking@gmail.com"
             subject "Fejl ved oprettelse af nyt marked oprettet fra en ${mobilePlatform}"
             html g.render(model: [view: view], template: "markedMailManuelTemplate")
         }
