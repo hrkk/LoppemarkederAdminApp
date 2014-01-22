@@ -42,7 +42,8 @@
 	<g:field name="longitude" value="${formatNumber(number: addressInstance?.longitude, minFractionDigits: 9)}" required=""/>
 </div>
 
-                <div class="message">Brug denne website til at finde latitude og longitude: <a href="http://universimmedia.pagesperso-orange.fr/geo/loc.htm">http://universimmedia.pagesperso-orange.fr/geo/loc.htm</a></div>
+                <div class="message">Brug denne website til at finde latitude og longitude: <a target="_blank" href="http://universimmedia.pagesperso-orange.fr/geo/loc.htm">http://universimmedia.pagesperso-orange.fr/geo/loc.htm</a>
+                 <b>Husk:</b> at erstatte . med , </div>
                 
 <div class="fieldcontain ${hasErrors(bean: addressInstance, field: 'postalCode', 'error')} ">
 	<label for="postalCode">
