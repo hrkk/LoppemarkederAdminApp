@@ -18,8 +18,6 @@ class MarkedItemController {
         respond MarkedItem.list(params), model: [markedItemInstanceCount: MarkedItem.count()]
     }
 
-
-
     @Secured(['ROLE_ADMIN'])
     def show(MarkedItem markedItemInstance) {
         respond markedItemInstance
@@ -145,7 +143,8 @@ class MarkedItemController {
                         markedRules: coreMarkedItem.markedRules,
                         markedInformation: coreMarkedItem.markedInformation,
                         latitude: coreMarkedItem.address.latitude,
-                        longitude: coreMarkedItem.address.longitude
+                        longitude: coreMarkedItem.address.longitude,
+                        enableBooking: coreMarkedItem.organizer.enableBooking
                 )
                 mi.setId(++idx)
                 markedItemList.add(mi)

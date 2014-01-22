@@ -55,7 +55,7 @@ class ITMarkedItemControllerSpec extends Specification {
         aJSONArray.length() == 4
 
         aJSONArray.each { item ->
-            println "item.id "+item.id
+            println "item.enableBooking "+item.enableBooking
             assert item.id.toString() != 'null'
             assert item.name.toString() != 'null'
             assert item.address.toString() != 'null'
@@ -67,6 +67,7 @@ class ITMarkedItemControllerSpec extends Specification {
             assert item.markedInformation.toString() != 'null'
             assert item.markedRules.toString() != 'null'
             assert item.toDate.toString() != 'null'
+            assert item.enableBooking.toString() != 'null'
         }
     }
 }
