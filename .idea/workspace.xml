@@ -6,14 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d97ec79d-4960-4ec2-8b8e-e11b9d832a99" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/integration/dk/roninit/loppadmin/ITMarkedItemControllerSpec.groovy" afterPath="$PROJECT_DIR$/test/integration/dk/roninit/loppadmin/ITMarkedItemControllerSpec.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/dk/roninit/loppadmin/MarkedItemController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/dk/roninit/loppadmin/MarkedItemController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroovyTestModule/src/callSaveJSON.groovy" afterPath="$PROJECT_DIR$/GroovyTestModule/src/callSaveJSON.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LoppemarkederAdminApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/Dummy.txt" changelist="d97ec79d-4960-4ec2-8b8e-e11b9d832a99" time="1390381312843" ignored="false" />
+    <file path="/Dummy.txt" changelist="d97ec79d-4960-4ec2-8b8e-e11b9d832a99" time="1390381848405" ignored="false" />
     <file path="/a.dummy" changelist="d97ec79d-4960-4ec2-8b8e-e11b9d832a99" time="1390340977767" ignored="false" />
     <file path="/MarkedItem.groovy" changelist="d97ec79d-4960-4ec2-8b8e-e11b9d832a99" time="1390039120533" ignored="false" />
     <file path="/BootStrap.groovy" changelist="d97ec79d-4960-4ec2-8b8e-e11b9d832a99" time="1389432835652" ignored="false" />
@@ -219,10 +218,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="callSaveJSON.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="callSaveJSON.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GroovyTestModule/src/callSaveJSON.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="187" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+            <state line="12" column="67" selection-start="427" selection-end="427" vertical-scroll-proportion="0.22925764">
               <folding />
             </state>
           </provider>
@@ -273,10 +272,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ITMarkedItemControllerSpec.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ITMarkedItemControllerSpec.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/integration/dk/roninit/loppadmin/ITMarkedItemControllerSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="55" selection-start="676" selection-end="676" vertical-scroll-proportion="0.51724136">
+            <state line="58" column="180" selection-start="1648" selection-end="1648" vertical-scroll-proportion="-9.782609">
               <folding />
             </state>
           </provider>
@@ -342,12 +341,12 @@
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/markedItemRest/_markedMailManuelTemplate.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/dk/roninit/loppadmin/CoreMarkedItem.groovy" />
-        <option value="$PROJECT_DIR$/GroovyTestModule/src/callSaveJSON.groovy" />
         <option value="$PROJECT_DIR$/src/templates/scaffolding/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/coreMarkedItem/_form.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/address/_form.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/dk/roninit/loppadmin/MarkedItemController.groovy" />
         <option value="$PROJECT_DIR$/test/integration/dk/roninit/loppadmin/ITMarkedItemControllerSpec.groovy" />
+        <option value="$PROJECT_DIR$/GroovyTestModule/src/callSaveJSON.groovy" />
       </list>
     </option>
   </component>
@@ -440,82 +439,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="loppadmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoppemarkederAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoppemarkederAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoppemarkederAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoppemarkederAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scaffolding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoppemarkederAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoppemarkederAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoppemarkederAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoppemarkederAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -684,7 +607,7 @@
       <recent name="dk.roninit.loppadmin" />
     </key>
   </component>
-  <component name="RunManager" selected="Grails.ITMarkedItemControllerSpec">
+  <component name="RunManager" selected="Groovy.callSaveJSON">
     <configuration default="false" name="CoreMarkedItemControllerSpec" type="GrailsRunConfigurationType" factoryName="Grails" temporary="true">
       <module name="LoppemarkederAdminApp" />
       <setting name="vmparams" value="" />
@@ -910,8 +833,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Grails.ITMarkedItemControllerSpec" />
-        <item index="1" class="java.lang.String" itemvalue="Groovy.callSaveJSON" />
+        <item index="0" class="java.lang.String" itemvalue="Groovy.callSaveJSON" />
+        <item index="1" class="java.lang.String" itemvalue="Grails.ITMarkedItemControllerSpec" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.CoreMarkedItemSpec" />
         <item index="3" class="java.lang.String" itemvalue="Grails.CoreMarkedItemControllerSpec" />
       </list>
@@ -993,7 +916,11 @@
       <created>1390381327523</created>
       <updated>1390381327523</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="expose enableBooking in feed">
+      <created>1390381859043</created>
+      <updated>1390381859043</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1073,7 +1000,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="display of lists order by a keyword" />
+    <option name="LAST_COMMIT_MESSAGE" value="expose enableBooking in feed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1097,6 +1024,7 @@
     <MESSAGE value="if latitude or longitude is missing manuel care is needed - sending special mail" />
     <MESSAGE value="work with list view for coreMarkedItems" />
     <MESSAGE value="display of lists order by a keyword" />
+    <MESSAGE value="expose enableBooking in feed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1179,13 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GroovyTestModule/src/callSaveJSON.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="187" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/coreMarkedItem/_form.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="95" selection-start="2555" selection-end="2555" vertical-scroll-proportion="-4.787234">
@@ -1219,7 +1140,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/integration/dk/roninit/loppadmin/ITMarkedItemControllerSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="55" selection-start="676" selection-end="676" vertical-scroll-proportion="0.51724136">
+        <state line="58" column="180" selection-start="1648" selection-end="1648" vertical-scroll-proportion="-9.782609">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroovyTestModule/src/callSaveJSON.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="67" selection-start="427" selection-end="427" vertical-scroll-proportion="0.22925764">
           <folding />
         </state>
       </provider>

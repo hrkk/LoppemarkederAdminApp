@@ -6,7 +6,7 @@ import org.json.simple.JSONObject
 import java.text.SimpleDateFormat
 
 
-def method = new PostMethod("http://localhost:8080/LoppemarkederAdminApp/markedItemRest/saveJSONAndroid")
+def method = new PostMethod("http://www.roninit.dk:81/LoppemarkederAdminApp/markedItemRest/saveJSONAndroid")
 def client = new HttpClient()
 
 JSONObject fromDateJSONObj = new JSONObject();
