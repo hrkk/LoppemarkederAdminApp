@@ -22,13 +22,14 @@ class MarkedItemRestController extends RestfulController {
     }
 
     def saveJSON(MarkedItemView view, def mobilePlatform) {
-        if (!view.latitude || !view.longitude) {
-            mailService.sendMail {
-                to "kasper.odgaard@gmail.com", "markedsbooking@gmail.com"
-                subject "Nyt marked oprettet fra en ${mobilePlatform}"
-                html g.render(model: [marked: view], template: "markedMailManuelTemplate")
-            }
-        } else {
+//        if (!view.latitude || !view.longitude) {
+//            mailService.sendMail {
+//                to "kasper.odgaard@gmail.com", "markedsbooking@gmail.com"
+//                subject "Nyt marked oprettet fra en ${mobilePlatform}"
+//                html g.render(model: [marked: view], template: "markedMailManuelTemplate")
+//            }
+//        } else {
+            try {
             // organizer
             Organizer organizer = Organizer.findByEmail(view.organizerEmail)
             if (!organizer) {
@@ -95,7 +96,7 @@ class MarkedItemRestController extends RestfulController {
                 intervalSet.add(dateInterval)
 
                 coreMarkedItem1.save(flush: true)
-                sendMyMail(coreMarkedItem1, "Dato interval tilføjet til marked", mobilePlatform)
+                sendMyMail(coreMarkedItem1, view, "Dato interval tilføjet til marked", mobilePlatform)
             }
 
             // marked does not exist
@@ -109,18 +110,29 @@ class MarkedItemRestController extends RestfulController {
                         dateInterval: dateInterval,
                         address: address,
                         organizer: organizer)
-                coreMarkedItem.save(flush: true)
-                sendMyMail(coreMarkedItem, "Nyt marked oprettet", mobilePlatform)
+                coreMarkedItem.save(flush: true, failOnError: true)
+                sendMyMail(coreMarkedItem, view, "Nyt marked oprettet", mobilePlatform)
             }
-        }
+            } catch (Exception e) {
+                sendMailManuel(view, mobilePlatform)
+            }
+      //  }
         render status: HttpStatus.OK
     }
 
-    def sendMyMail(CoreMarkedItem coreMarkedItem, def mailSubject, def mobilePlatform) {
+    private void sendMyMail(CoreMarkedItem coreMarkedItem, MarkedItemView view, def mailSubject, def mobilePlatform) {
         mailService.sendMail {
             to "kasper.odgaard@gmail.com", "markedsbooking@gmail.com"
             subject mailSubject + " fra en ${mobilePlatform}"
-            html g.render(model: [marked: coreMarkedItem], template: "markedMailTemplate")
+            html g.render(model: [marked: coreMarkedItem, view: view], template: "markedMailTemplate")
+        }
+    }
+
+    private void sendMailManuel(MarkedItemView view, def mobilePlatform) {
+        mailService.sendMail {
+            to "kasper.odgaard@gmail.com", "markedsbooking@gmail.com"
+            subject "Fejl ved oprettelse af nyt marked oprettet fra en ${mobilePlatform}"
+            html g.render(model: [view: view], template: "markedMailManuelTemplate")
         }
     }
 }

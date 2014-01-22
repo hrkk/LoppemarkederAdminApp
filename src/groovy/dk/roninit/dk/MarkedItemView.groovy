@@ -1,5 +1,7 @@
 package dk.roninit.dk
 
+import java.text.SimpleDateFormat
+
 class MarkedItemView {
     String name
     String additionalOpenTimePeriod
@@ -44,6 +46,14 @@ class MarkedItemView {
     }
 
 
+    public String getFromDateAsString() {
+        getDateAsString(fromDate)
+    }
+
+    public String getToDateAsString() {
+        getDateAsString(toDate)
+    }
+
 
     @Override
     public java.lang.String toString() {
@@ -62,5 +72,32 @@ class MarkedItemView {
                 ", organizerEmail='" + organizerEmail + '\'' +
                 ", organizerPhone='" + organizerPhone + '\'' +
                 '}';
+    }
+
+    String toHtml() {
+        StringBuilder sb = new StringBuilder(256)
+
+        sb.append("<b>").append("Markeds Arrangør").append("</b>").append("</br>")
+        sb.append("Navn :").append(organizerName).append("</br>")
+        sb.append("E-mail :").append(organizerEmail).append("</br>")
+        sb.append("Telefon nr. :").append(organizerPhone).append("</br>")
+        sb.append("<b>").append("Markeds data").append("</b>").append("</br>")
+        sb.append("Markedsnavn :").append(name).append("</br>")
+        sb.append("Adresse :").append(address).append("</br>")
+        sb.append("Fra dato :").append(getDateAsString(fromDate)).append("</br>")
+        sb.append("Til dato :").append(getDateAsString(toDate)).append("</br>")
+        sb.append("Evt. åbent tidsrum :").append(additionalOpenTimePeriod).append("</br>")
+        sb.append("Entre pris :").append(entreInfo).append("</br>")
+        sb.append("Regler :").append(markedRules).append("</br>")
+        sb.append("Markeds information :").append(markedInformation).append("</br>")
+        return sb.toString()
+    }
+
+
+
+    String getDateAsString(Date date) {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy")
+        String formattedDate = sdf.format(date)
+        return formattedDate
     }
 }
