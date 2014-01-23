@@ -6,11 +6,11 @@ dataSource {
 //        password = ""
 //    }
   //  production {
-        pooled = true
-        driverClassName = "com.mysql.jdbc.Driver"
-        dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
-        username = "grails"
-        password = "server"
+//        pooled = true
+//        driverClassName = "com.mysql.jdbc.Driver"
+//        dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
+//        username = "grails"
+//        password = "server"
    // }
 }
 hibernate {
@@ -25,12 +25,20 @@ environments {
 //    HUSK at rette dataSource
     development {
         dataSource {
+            pooled = true
+            driverClassName = "org.h2.Driver"
+            username = "sa"
+            password = ""
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
         }
     }
     test {
         dataSource {
+            pooled = true
+            driverClassName = "org.h2.Driver"
+            username = "sa"
+            password = ""
             dbCreate = "update"
             url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
         }
@@ -49,6 +57,11 @@ environments {
 //    }
     production {
         dataSource {
+            pooled = true
+            driverClassName = "com.mysql.jdbc.Driver"
+            dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
+            username = "grails"
+            password = "server"
             dbCreate = "update"
             url = "jdbc:mysql://localhost:3306/loppemarkeder?autoconnect=true"
         }

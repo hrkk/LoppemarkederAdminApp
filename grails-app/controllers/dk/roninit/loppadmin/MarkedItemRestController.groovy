@@ -34,7 +34,7 @@ class MarkedItemRestController extends RestfulController {
             }
             // Address
             Address address = Address.findByAddressLine1(view.getAddress())
-            if (!address || (address != null && address.longitude != view.longitude && address.latitude != view.latitude)) {
+            if (!address && view.longitude != 0.0d && view.latitude != 0.0d || (address != null && address.longitude != view.longitude && address.latitude != view.latitude)) {
                 address = new Address(addressLine1: view.address,
                         latitude: view.latitude,
                         longitude: view.longitude,
@@ -42,8 +42,6 @@ class MarkedItemRestController extends RestfulController {
 
                 address = address.save(flush: true, failOnError: true)
             }
-
-
 
             DateInterval dateInterval
 
@@ -114,7 +112,8 @@ class MarkedItemRestController extends RestfulController {
 
     private void sendMyMail(CoreMarkedItem coreMarkedItem, MarkedItemView view, def mailSubject, def mobilePlatform) {
         mailService.sendMail {
-            to "info@markedsbooking.dk", "markedsbooking@gmail.com"
+            //to "info@markedsbooking.dk", "markedsbooking@gmail.com"
+            to "markedsbooking@gmail.com"
             subject mailSubject + " fra en ${mobilePlatform}"
             html g.render(model: [marked: coreMarkedItem, view: view], template: "markedMailTemplate")
         }
@@ -122,7 +121,8 @@ class MarkedItemRestController extends RestfulController {
 
     private void sendMailManuel(MarkedItemView view, def mobilePlatform) {
         mailService.sendMail {
-            to "info@markedsbooking.dk", "markedsbooking@gmail.com"
+            //to "info@markedsbooking.dk", "markedsbooking@gmail.com"
+            to "markedsbooking@gmail.com"
             subject "Fejl ved oprettelse af nyt marked oprettet fra en ${mobilePlatform}"
             html g.render(model: [view: view], template: "markedMailManuelTemplate")
         }
