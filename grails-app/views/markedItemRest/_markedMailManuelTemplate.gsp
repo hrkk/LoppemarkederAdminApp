@@ -31,10 +31,6 @@
         <td>${view.name}</td>
     </tr>
     <tr>
-        <td>Adresse</td>
-        <td>${view.address}</td>
-    </tr>
-    <tr>
         <td>Fra dato</td>
         <td>${view.fromDateAsString}</td>
     </tr>
@@ -58,4 +54,25 @@
         <td>Markeds information</td>
         <td>${view.markedInformation}</td>
     </tr>
+    <tr>
+        <td>Adresse</td>
+        <td>${view.address}</td>
+    </tr>
+    <tr>
+        <td>Latitude</td>
+        <td>${view.latitude}</td>
+    </tr>
+    <tr>
+        <td>Longitude</td>
+        <td>${view.longitude}</td>
+    </tr>
+    <tr>
+        <td colspan="2"><b>Stracktrace (til Kasper)</b></td>
+    </tr>
+    <tr>
+        <td colspan="2">${strackTrace}</td>
+    </tr>
+
+
+
 </table>

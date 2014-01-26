@@ -125,6 +125,7 @@ class MarkedItemController {
     }
 
     def listJSON2() {
+        log.info "listJSON2"
         // getAll markedCoreItems
         def allCoreMarkedItems = CoreMarkedItem.findAllByEnabled(true)
 
@@ -158,7 +159,6 @@ class MarkedItemController {
 
         // if (item.fromDate.after(cal.getTime())) {
         Date nowAsDate = getDateWithoutTime(Calendar.getInstance());
-        println "nowAsDate " + nowAsDate
 
         list.eachWithIndex { it, idx ->
             // fix the dates

@@ -100,4 +100,12 @@ class MarkedItemView {
         String formattedDate = sdf.format(date)
         return formattedDate
     }
+
+    String danishCharFix(String w) {
+        return w.replaceAll("::OE::", "Ø")
+    }
+
+    def getAddress() {
+        return danishCharFix(address)
+    }
 }

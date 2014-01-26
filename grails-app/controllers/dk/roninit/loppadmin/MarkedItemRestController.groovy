@@ -22,6 +22,7 @@ class MarkedItemRestController extends RestfulController {
     }
 
     def saveJSON(MarkedItemView view, def mobilePlatform) {
+            log.info(view)
             try {
             // organizer
             Organizer organizer = Organizer.findByEmail(view.organizerEmail)
@@ -105,24 +106,28 @@ class MarkedItemRestController extends RestfulController {
                 sendMyMail(coreMarkedItem, view, "Nyt marked oprettet", mobilePlatform)
             }
             } catch (Exception e) {
-                sendMailManuel(view, mobilePlatform)
+                sendMailManuel(view, mobilePlatform, e.getMessage())
+                log.error "Error: ${e.message}", e
+                render status: HttpStatus.INTERNAL_SERVER_ERROR
             }
         render status: HttpStatus.OK
     }
 
     private void sendMyMail(CoreMarkedItem coreMarkedItem, MarkedItemView view, def mailSubject, def mobilePlatform) {
         mailService.sendMail {
-            to "info@markedsbooking.dk", "markedsbooking@gmail.com"
+           // to "info@markedsbooking.dk", "markedsbooking@gmail.com"
+            to "markedsbooking@gmail.com"
             subject mailSubject + " fra en ${mobilePlatform}"
             html g.render(model: [marked: coreMarkedItem, view: view], template: "markedMailTemplate")
         }
     }
 
-    private void sendMailManuel(MarkedItemView view, def mobilePlatform) {
+    private void sendMailManuel(MarkedItemView view, def mobilePlatform, def strackTrace) {
         mailService.sendMail {
-            to "info@markedsbooking.dk", "markedsbooking@gmail.com"
+            //to "info@markedsbooking.dk", "markedsbooking@gmail.com"
+            to "markedsbooking@gmail.com"
             subject "Fejl ved oprettelse af nyt marked oprettet fra en ${mobilePlatform}"
-            html g.render(model: [view: view], template: "markedMailManuelTemplate")
+            html g.render(model: [view: view, strackTrace: strackTrace], template: "markedMailManuelTemplate")
         }
     }
 }

@@ -125,6 +125,11 @@ log4j = {
            'org.springframework',
            'org.hibernate',
            'net.sf.ehcache.hibernate'
+
+    // Set for a specific domain class
+    info "grails.app.controllers.dk.roninit.loppadmin.MarkedItemController"
+    info "grails.app.controllers.dk.roninit.loppadmin.MarkedItemRestController"
+
 }
 
 
