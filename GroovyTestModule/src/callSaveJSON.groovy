@@ -25,12 +25,12 @@ cal.add(Calendar.DATE,1)
 def toDate = formatter.format(cal.getTime())
 
 String JSON_STRING = "{\"class\":\" dk.roninit.dk.MarkedItemView\"" +
-        ",\"name\":\"JSON marked6\"" +
+        ",\"name\":\"JSON marked7\"" +
         ",\"additionalOpenTimePeriod\":\"JSON har altid åbent\"" +
         ",\"entreInfo\":\"JSON entreInfo\"" +
         ",\"markedRules\":\"JSON markedRules\"" +
         ",\"markedInformation\":\"JSON markedInformation\"" +
-        ",\"address\":\"::OE::devej 6, 6666\"" +
+        ",\"address\":\"::OE::devej 6 ::AA::::AE::, 6666\"" +
         ",\"fromDate\":\"${fromDate}\"" +
         ",\"toDate\":\"${toDate}\"" +
         ",\"latitude\":${BigDecimal.valueOf(1.0d)}" +
