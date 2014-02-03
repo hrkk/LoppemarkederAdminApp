@@ -42,6 +42,7 @@
 				</g:each>
 				</tbody>
 			</table>
+            <g:link action="cleanUp">cleanUp</g:link>
 			<div class="pagination">
 				<g:paginate total="${dateIntervalInstanceCount ?: 0}" />
 			</div>

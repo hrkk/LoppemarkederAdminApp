@@ -1,7 +1,5 @@
 package dk.roninit.loppadmin
 
-
-
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
@@ -81,7 +79,7 @@ class DateIntervalController {
             return
         }
 
-        dateIntervalInstance.delete flush:true
+        dateIntervalInstance.delete (flush:true)
 
         request.withFormat {
             form {
@@ -100,5 +98,20 @@ class DateIntervalController {
             }
             '*'{ render status: NOT_FOUND }
         }
+    }
+
+    @Transactional
+    def cleanUp() {
+        println "cleanUp!"
+        // has to be reverse!!!
+        DateInterval.all.reverseEach { di ->
+            try {
+                di.delete(flush: true)
+                println "deleted"
+            } catch (Exception e) {
+                println "can not delete !"
+            }
+        }
+        redirect action:"index", method:"GET"
     }
 }
