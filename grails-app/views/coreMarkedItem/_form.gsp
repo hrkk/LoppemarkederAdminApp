@@ -63,7 +63,7 @@
 		<g:message code="coreMarkedItem.dateInterval.label" default="Date Interval" />
 		
 	</label>
-	<g:select name="dateInterval" from="${dk.roninit.loppadmin.DateInterval.listOrderByFromDate()}" multiple="multiple" optionKey="id" size="5" value="${coreMarkedItemInstance?.dateInterval*.id}" class="many-to-many"/>
+	<g:select name="dateInterval" from="${dk.roninit.loppadmin.DateInterval.listOrderByFromDate()}" multiple="multiple" optionKey="id" size="20" value="${coreMarkedItemInstance?.dateInterval*.id}" class="many-to-many"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: coreMarkedItemInstance, field: 'organizer', 'error')} required">
