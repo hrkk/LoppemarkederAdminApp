@@ -34,9 +34,12 @@ class MarkedItemView {
     }
 
     String getDateAsString(Date date) {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy")
-        String formattedDate = sdf.format(date)
-        return formattedDate
+        if (date != null) {
+            SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy")
+            String formattedDate = sdf.format(date)
+            return formattedDate
+        }
+        return "";
     }
 
     def getName() {

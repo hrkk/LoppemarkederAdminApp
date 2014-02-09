@@ -21,6 +21,13 @@ class MarkedItemRestController extends RestfulController {
         saveJSON(view, "Android")
     }
 
+    def saveJSONIPhone(MarkedItemView view) {
+        log.info(view)
+        sendMailManuelIphone(view, "Iphone", "Smoke Testing!!!")
+        //saveJSON(view, "Android")
+        render status: HttpStatus.OK
+    }
+
     def saveJSON(MarkedItemView view, def mobilePlatform) {
             log.info(view)
             try {
@@ -126,6 +133,15 @@ class MarkedItemRestController extends RestfulController {
         mailService.sendMail {
             to "info@markedsbooking.dk", "markedsbooking@gmail.com"
             //to "markedsbooking@gmail.com"
+            subject "Fejl ved oprettelse af nyt marked oprettet fra en ${mobilePlatform}"
+            html g.render(model: [view: view, strackTrace: strackTrace], template: "markedMailManuelTemplate")
+        }
+    }
+
+    private void sendMailManuelIphone(MarkedItemView view, def mobilePlatform, def strackTrace) {
+        mailService.sendMail {
+           // to "info@markedsbooking.dk", "markedsbooking@gmail.com"
+            to "markedsbooking@gmail.com"
             subject "Fejl ved oprettelse af nyt marked oprettet fra en ${mobilePlatform}"
             html g.render(model: [view: view, strackTrace: strackTrace], template: "markedMailManuelTemplate")
         }

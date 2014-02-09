@@ -104,11 +104,11 @@ class DateIntervalController {
     def cleanUp() {
         println "cleanUp!"
         // has to be reverse!!!
-        DateInterval.all.reverseEach { di ->
+        DateInterval.all.each { di ->
             try {
                 di.delete(flush: true)
                 println "deleted"
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 println "can not delete !"
             }
         }
