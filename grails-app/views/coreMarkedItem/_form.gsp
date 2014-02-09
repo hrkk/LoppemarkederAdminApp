@@ -60,7 +60,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: coreMarkedItemInstance, field: 'dateInterval', 'error')} ">
 	<label for="dateInterval">
-		<g:message code="coreMarkedItem.dateInterval.label" default="Date Interval" />
+		<g:message code="coreMarkedItem.dateInterval.label" default="Date Interval - vælg flere datoer ved at holde apple tasten (der står også cmd på den) nede og klik på de ønskede" />
 		
 	</label>
 	<g:select name="dateInterval" from="${dk.roninit.loppadmin.DateInterval.listOrderByFromDate()}" multiple="multiple" optionKey="id" size="20" value="${coreMarkedItemInstance?.dateInterval*.id}" class="many-to-many"/>
