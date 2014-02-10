@@ -103,15 +103,25 @@ class DateIntervalController {
     @Transactional
     def cleanUp() {
         println "cleanUp!"
-        // has to be reverse!!!
-        DateInterval.all.each { di ->
+
+        def allDateIntervalBelongingIds = []
+        // find all dateIntervals belonging to a marked
+        CoreMarkedItem.all.each { CoreMarkedItem marked ->
+            marked.dateInterval.each { DateInterval dateInterval ->
+                allDateIntervalBelongingIds << dateInterval.id
+            }
+        }
+        DateInterval.all.each { DateInterval di ->
             try {
-                di.delete(flush: true)
-                println "deleted"
+
+                if (!allDateIntervalBelongingIds.contains(di.id)) {
+                    di.delete(flush: true)
+                    println "deleted"
+                }
             } catch (Throwable e) {
                 println "can not delete !"
             }
         }
-        redirect action:"index", method:"GET"
+        redirect action: "index", method: "GET"
     }
 }
