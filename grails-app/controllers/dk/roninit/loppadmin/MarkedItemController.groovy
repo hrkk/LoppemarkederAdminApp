@@ -118,7 +118,10 @@ class MarkedItemController {
 
 
     private Date getDateWithoutTime(Calendar calendarIn) {
-        Calendar toDateAsCalendar = Calendar.getInstance();
+        TimeZone timeZone = TimeZone.getTimeZone("Greenwich");
+        //TimeZone timeZone = TimeZone.getDefault();
+        //def timeZone = calendarIn.getTimeZone()
+        Calendar toDateAsCalendar = Calendar.getInstance(timeZone);
         toDateAsCalendar.set(Calendar.MILLISECOND, 0)
         toDateAsCalendar.set(calendarIn.get(Calendar.YEAR), calendarIn.get(Calendar.MONTH), calendarIn.get(Calendar.DATE), 0, 0, 0);
         return toDateAsCalendar.getTime();
@@ -160,7 +163,7 @@ class MarkedItemController {
         // if (item.fromDate.after(cal.getTime())) {
         Date nowAsDate = getDateWithoutTime(Calendar.getInstance());
 
-        list.eachWithIndex { it, idx ->
+        list.eachWithIndex {MarkedItem it, idx ->
             // fix the dates
             it.setFromDate(getDateWithoutTime(it.fromDate.toCalendar()))
             // fix the id
