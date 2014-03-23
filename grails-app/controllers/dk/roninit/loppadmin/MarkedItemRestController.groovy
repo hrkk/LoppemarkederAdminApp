@@ -140,9 +140,9 @@ class MarkedItemRestController extends RestfulController {
 
     private void sendMailManuelIphone(MarkedItemView view, def mobilePlatform, def strackTrace) {
         mailService.sendMail {
-           // to "info@markedsbooking.dk", "markedsbooking@gmail.com"
-            to "markedsbooking@gmail.com"
-            subject "Fejl ved oprettelse af nyt marked oprettet fra en ${mobilePlatform}"
+            to "info@markedsbooking.dk", "markedsbooking@gmail.com"
+            //to "markedsbooking@gmail.com"
+            subject "Nyt marked til manuel oprettelse, oprettet fra en ${mobilePlatform}"
             html g.render(model: [view: view, strackTrace: strackTrace], template: "markedMailManuelTemplate")
         }
     }

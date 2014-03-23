@@ -61,6 +61,16 @@ class CoreMarkedItemController {
             respond coreMarkedItemInstance.errors, view:'edit'
             return
         }
+        // bugfix for update more then 1 element
+        def dateIntevalParams = params.get("dateInterval")
+        boolean isArray = dateIntevalParams instanceof Object[]
+        if (isArray) {
+            coreMarkedItemInstance.dateInterval.clear();
+            dateIntevalParams.each { it ->
+                def di = DateInterval.get(it)
+                coreMarkedItemInstance.dateInterval.add(di)
+            }
+        }
 
         coreMarkedItemInstance.save flush:true
 

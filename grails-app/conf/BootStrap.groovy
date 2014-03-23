@@ -227,59 +227,59 @@ class BootStrap {
             dateIntervalFrederiksborghallen = dateIntervalFrederiksborghallen.save(flush: true)
         }
 
-        // coreMarkedItem
-        if (!CoreMarkedItem.findByName("Brønshøj Torv")) {
-            CoreMarkedItem coreMarkedItem = new CoreMarkedItem(name: "Brønshøj Torv",
-                    entreInfo: 'Gratis adgang',
-                    additionalOpenTimePeriod: 'Åbent fra 9 til 15',
-                    markedRules: 'Loppemarkedet på Brønshøj torv er et loppemarked, hvor du kun kan købe brugte ting.',
-                    markedInformation: 'Markedet er udendørs med 70 pladser',
-                    enabled: true,
-                    dateInterval: dateIntervalDateBroenshoejTorv,
-                    address: adrBroenshoej,
-                    organizer: torbenKruseOrganizer)
-            coreMarkedItem.save(flush: true)
-        }
+//        // coreMarkedItem
+//        if (!CoreMarkedItem.findByName("Brønshøj Torv")) {
+//            CoreMarkedItem coreMarkedItem = new CoreMarkedItem(name: "Brønshøj Torv",
+//                    entreInfo: 'Gratis adgang',
+//                    additionalOpenTimePeriod: 'Åbent fra 9 til 15',
+//                    markedRules: 'Loppemarkedet på Brønshøj torv er et loppemarked, hvor du kun kan købe brugte ting.',
+//                    markedInformation: 'Markedet er udendørs med 70 pladser',
+//                    enabled: true,
+//                    dateInterval: dateIntervalDateBroenshoejTorv,
+//                    address: adrBroenshoej,
+//                    organizer: torbenKruseOrganizer)
+//            coreMarkedItem.save(flush: true)
+//        }
 
-        if (!CoreMarkedItem.findByName("Loppemarked i Farum Arena")) {
-            CoreMarkedItem coreMarkedItem = new CoreMarkedItem(name: "Loppemarked i Farum Arena",
-                    entreInfo: 'Entre 40,00 for voksne, børn under 12 år er gratis iflg. med en voksen.',
-                    markedRules: 'Loppemarkedet i Farum Arena er et loppemarked, hvor der kun sælges brugt.',
-                    additionalOpenTimePeriod: "Åbent begge dage fra 10 til 16.",
-                    markedInformation: 'Der er 140 stader.',
-                    enabled: true,
-                    dateInterval: dateIntervalFarumArena,
-                    address: adrFarum,
-                    organizer: anonymousOrganizer)
-            coreMarkedItem.save(flush: true)
-        }
+//        if (!CoreMarkedItem.findByName("Loppemarked i Farum Arena")) {
+//            CoreMarkedItem coreMarkedItem = new CoreMarkedItem(name: "Loppemarked i Farum Arena",
+//                    entreInfo: 'Entre 40,00 for voksne, børn under 12 år er gratis iflg. med en voksen.',
+//                    markedRules: 'Loppemarkedet i Farum Arena er et loppemarked, hvor der kun sælges brugt.',
+//                    additionalOpenTimePeriod: "Åbent begge dage fra 10 til 16.",
+//                    markedInformation: 'Der er 140 stader.',
+//                    enabled: true,
+//                    dateInterval: dateIntervalFarumArena,
+//                    address: adrFarum,
+//                    organizer: anonymousOrganizer)
+//            coreMarkedItem.save(flush: true)
+//        }
 
 
-        if (!CoreMarkedItem.findByName("Loppemarked i Frederiksborghallen")) {
-            CoreMarkedItem coreMarkedItem = new CoreMarkedItem(name: "Loppemarked i Frederiksborghallen",
-                    entreInfo: 'Entre 40,00 for voksne, børn under 12 år gratis adgang iflg. med voksen.',
-                    additionalOpenTimePeriod: "Åbent begge dage fra 10 til 16.",
-                    markedRules: 'Loppemarkedet i Frederiksborghallen er et vaskeægte loppemarked, hvor der kun sælges gamle brugte ting.',
-                    markedInformation: 'Der er over 160 stader, og markedet er indendørs. Du booker stade online på markedsbooking.dk',
-                    enabled: true,
-                    dateInterval: dateIntervalFrederiksborghallen,
-                    address: adrHilleroed,
-                    organizer: torbenKruseOrganizer)
-            coreMarkedItem.save(flush: true)
-        }
+//        if (!CoreMarkedItem.findByName("Loppemarked i Frederiksborghallen")) {
+//            CoreMarkedItem coreMarkedItem = new CoreMarkedItem(name: "Loppemarked i Frederiksborghallen",
+//                    entreInfo: 'Entre 40,00 for voksne, børn under 12 år gratis adgang iflg. med voksen.',
+//                    additionalOpenTimePeriod: "Åbent begge dage fra 10 til 16.",
+//                    markedRules: 'Loppemarkedet i Frederiksborghallen er et vaskeægte loppemarked, hvor der kun sælges gamle brugte ting.',
+//                    markedInformation: 'Der er over 160 stader, og markedet er indendørs. Du booker stade online på markedsbooking.dk',
+//                    enabled: true,
+//                    dateInterval: dateIntervalFrederiksborghallen,
+//                    address: adrHilleroed,
+//                    organizer: torbenKruseOrganizer)
+//            coreMarkedItem.save(flush: true)
+//        }
 
-        if (!CoreMarkedItem.findByName("Loppe- og kræmmermarked i Slagelse")) {
-            CoreMarkedItem coreMarkedItem = new CoreMarkedItem(name: "Loppe- og kræmmermarked i Slagelse",
-                    entreInfo: '25 kr.',
-                    additionalOpenTimePeriod: "kl. 10-15",
-                    markedRules: 'ej beskrevet',
-                    markedInformation: 'Markedet er en blanding af private "loppekræmmere" med behov for oprydning i gemmerne samt mere rutinerede loppekræmmere. hovedsageligt gammelt og brugt, men få stader med nye kvalitetseffekter. foregår i Slagelse Hallen',
-                    enabled: true,
-                    dateInterval: dateIntervalFrederiksborghallen,
-                    address: adrSlagelse,
-                    organizer: anonymousOrganizer)
-            coreMarkedItem.save(flush: true)
-        }
+//        if (!CoreMarkedItem.findByName("Loppe- og kræmmermarked i Slagelse")) {
+//            CoreMarkedItem coreMarkedItem = new CoreMarkedItem(name: "Loppe- og kræmmermarked i Slagelse",
+//                    entreInfo: '25 kr.',
+//                    additionalOpenTimePeriod: "kl. 10-15",
+//                    markedRules: 'ej beskrevet',
+//                    markedInformation: 'Markedet er en blanding af private "loppekræmmere" med behov for oprydning i gemmerne samt mere rutinerede loppekræmmere. hovedsageligt gammelt og brugt, men få stader med nye kvalitetseffekter. foregår i Slagelse Hallen',
+//                    enabled: true,
+//                    dateInterval: dateIntervalFrederiksborghallen,
+//                    address: adrSlagelse,
+//                    organizer: anonymousOrganizer)
+//            coreMarkedItem.save(flush: true)
+//        }
 
 
 
