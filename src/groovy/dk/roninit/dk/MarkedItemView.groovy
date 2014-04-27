@@ -91,7 +91,7 @@ class MarkedItemView {
 
     private String danishCharFix(String w) {
         if(w!= null) {
-            return w.replaceAll("::OE::", "Ø").replaceAll("::AE::", "Æ").replaceAll("::AA::", "Å")
+            return w.replaceAll("::OE::", "Ø").replaceAll("::AE::", "Æ").replaceAll("::AA::", "Å").replaceAll("::oe::", "ø").replaceAll("::ae::", "æ").replaceAll("::aa::", "å")
         }
         return w
     }

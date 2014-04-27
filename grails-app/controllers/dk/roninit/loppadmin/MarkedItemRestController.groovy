@@ -23,9 +23,12 @@ class MarkedItemRestController extends RestfulController {
 
     def saveJSONIPhone(MarkedItemView view) {
         log.info(view)
-        sendMailManuelIphone(view, "Iphone", "Smoke Testing!!!")
-        //saveJSON(view, "Android")
-        render status: HttpStatus.OK
+        if(!view.latitude || !view.longitude )  {
+            sendMailManuelIphone(view, "Iphone", "Manuel!")
+            render status: HttpStatus.OK
+        } else {
+            saveJSON(view, "Iphone")
+        }
     }
 
     def saveJSON(MarkedItemView view, def mobilePlatform) {
@@ -143,6 +146,14 @@ class MarkedItemRestController extends RestfulController {
             to "info@markedsbooking.dk", "markedsbooking@gmail.com"
             //to "markedsbooking@gmail.com"
             subject "Nyt marked til manuel oprettelse, oprettet fra en ${mobilePlatform}"
+            html g.render(model: [view: view, strackTrace: strackTrace], template: "markedMailManuelTemplate")
+        }
+    }
+
+    private void sendMailTestIphone(MarkedItemView view, def mobilePlatform, def strackTrace) {
+        mailService.sendMail {
+            to "markedsbooking@gmail.com"
+            subject "Test af automatisk oprettelse - oprettet fra en ${mobilePlatform}"
             html g.render(model: [view: view, strackTrace: strackTrace], template: "markedMailManuelTemplate")
         }
     }

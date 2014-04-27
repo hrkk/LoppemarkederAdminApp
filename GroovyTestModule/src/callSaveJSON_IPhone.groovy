@@ -30,10 +30,10 @@ String JSON_STRING = "{\"class\":\"dk.roninit.dk.MarkedItemView\",\"name\":\"JSO
 //        ",\"markedRules\":\"JSON markedRules\"" +
 //        ",\"markedInformation\":\"JSON markedInformation\"" +
 //        ",\"address\":\"::OE::devej 6 ::AA::::AE::, 6666\"" +
-//        ",\"fromDate\":\"${fromDate}\"" +
-//        ",\"toDate\":\"${toDate}\"" +
-//        ",\"latitude\":${BigDecimal.valueOf(1.0d)}" +
-//        ",\"longitude\":${BigDecimal.valueOf(2.0d)}" +
+        ",\"fromDate\":\"${fromDate}\"" +
+        ",\"toDate\":\"${toDate}\"" +
+        ",\"latitude\":${BigDecimal.valueOf(1.0d)}" +
+        ",\"longitude\":${BigDecimal.valueOf(2.0d)}" +
 //        ",\"organizerName\":\"JSON organizerName\"" +
 //        ",\"organizerEmail\":\"json@mail.dk\"" +
 //        ",\"organizerPhone\":\"12345678\"" +
