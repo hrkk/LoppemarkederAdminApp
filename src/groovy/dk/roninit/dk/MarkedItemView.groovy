@@ -21,8 +21,12 @@ class MarkedItemView {
     String organizerEmail
     String organizerPhone
 
-    BigDecimal getLatitude() {
-        return latitude
+    public BigDecimal getLatitude() {
+        return fixLngLat(latitude)
+    }
+
+    public BigDecimal getLongitude () {
+        return fixLngLat(longitude)
     }
 
     public String getFromDateAsString() {
@@ -94,5 +98,11 @@ class MarkedItemView {
             return w.replaceAll("::OE::", "Ø").replaceAll("::AE::", "Æ").replaceAll("::AA::", "Å").replaceAll("::oe::", "ø").replaceAll("::ae::", "æ").replaceAll("::aa::", "å")
         }
         return w
+    }
+
+    private def fixLngLat(def tal) {
+        if(tal != null && tal != 0.0 && tal > 1000)
+            return tal/1000000
+        return tal
     }
 }

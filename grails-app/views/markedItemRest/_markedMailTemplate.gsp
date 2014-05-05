@@ -36,6 +36,14 @@
         <td>${view.address}</td>
     </tr>
     <tr>
+        <td>Latitude</td>
+        <td>${view.latitude}</td>
+    </tr>
+    <tr>
+        <td>Longitude</td>
+        <td>${view.longitude}</td>
+    </tr>
+    <tr>
         <td>Fra dato</td>
         <td>${view.fromDateAsString}</td>
     </tr>
